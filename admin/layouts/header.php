@@ -12,14 +12,14 @@
     <title>Admin - Motor Cao Sơn</title>
 
     <!-- Custom fonts for this template-->
-    <link href="/storemotor/public/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url() ?>public/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- Page level plugin CSS-->
-    <link href="/storemotor/public/admin/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>public/admin/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="/storemotor/public/admin/css/sb-admin.css" rel="stylesheet">
-    <link href="/storemotor/public/admin/css/style-admin.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>public/admin/css/sb-admin.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>public/admin/css/style-admin.css" rel="stylesheet">
 
 </head>
 
@@ -91,7 +91,7 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
         <li class="nav-item active">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="<?php echo base_url() ?>admin">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>
                     <strong>ADMIN - MOTOR CAO SƠN</strong>
@@ -104,20 +104,27 @@
                 <span>Danh mục</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                <a class="dropdown-item" href="login.html">Sản phẩm</a>
-                <a class="dropdown-item" href="register.html">Tin tức</a>
+                <ul class="dropdowm-menu-list">
+                    <li>
+                        <a class="dropdown-item" href="<?php echo modules("categoryProduct") ?>">Sản phẩm</a>
+                    </li>
 
+                    <li>
+                        <a class="dropdown-item" href="<?php echo modules("categoryPost") ?>">Tin tức</a>
+                    </li>
+                </ul>
             </div>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="charts.html">
                 <i class="fas fa-fw fa-chart-area"></i>
-                <span>Charts</span></a>
+                <span>Sản phẩm</span>
+            </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="tables.html">
                 <i class="fas fa-fw fa-table"></i>
-                <span>Tables</span></a>
+                <span>Tin tức</span></a>
         </li>
     </ul>
     <div id="content-wrapper">

@@ -1,5 +1,5 @@
 <?php
-$open = "categoryProduct";
+$open = "categoryPost";
 require_once __DIR__."/../../autoload/autoload.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -17,12 +17,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // error trống có nghĩa là không có lỗi
     if(empty($error)){
-        $id_insert = $db->insert("category_product", $data);
+        $id_insert = $db->insert("category_post", $data);
 //        print_r($id_insert);
         if($id_insert > 0)
         {
             $_SESSION['success'] = "Thêm mới thành công";
-            redirectAdmin("categoryProduct");
+            redirectAdmin("categoryPost");
         }
         else
         {
@@ -45,12 +45,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
             <li class="breadcrumb-item">
                 <a href="index.php">Danh mục</a>
             </li>
-            <li class="breadcrumb-item active">Thêm mới danh mục sản phẩm</li>
+            <li class="breadcrumb-item active">Thêm mới danh mục tin tức</li>
         </ol>
         <!-- End.Breadcrumbs-->
 
         <div class="admin-title-top">
-            <h1>Thêm mới danh mục sản phẩm</h1>
+            <h1>Thêm mới danh mục tin tức</h1>
         </div>
         <!-- End. admin-title-top   -->
         <div class="button-custom">

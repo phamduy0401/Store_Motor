@@ -104,8 +104,7 @@ function  postInput($string)
 
 function base_url()
 {
-    // return $url  = "http://codedoan.com/";
-    return $url  = "http://localhost/tutphp/";
+    return $url  = "http://localhost/storemotor/";
 }
 
 

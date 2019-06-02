@@ -17,17 +17,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // error trống có nghĩa là không có lỗi
     if(empty($error)){
-        $id_insert = $db->insert("category_post", $data);
-//        print_r($id_insert);
-        if($id_insert > 0)
+        $isset = $db->fetchOne("category_post","name = '".$data['name']."' ");
+        if (count($isset) > 0)
         {
-            $_SESSION['success'] = "Thêm mới thành công";
-            redirectAdmin("categoryPost");
+            $_SESSION['error'] = "Tên danh mục đã tồn tại !";
         }
         else
         {
-            // Thêm thất bại
-            $_SESSION['error'] = "Thêm mới thất bại";
+            $id_insert = $db->insert("category_post", $data);
+//        print_r($id_insert);
+            if($id_insert > 0)
+            {
+                $_SESSION['success'] = "Thêm mới thành công";
+                redirectAdmin("categoryPost");
+            }
+            else
+            {
+                // Thêm thất bại
+                $_SESSION['error'] = "Thêm mới thất bại";
+            }
         }
     }
 }
@@ -56,7 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         <div class="button-custom">
             <a class="btn-add" href="index.php"><i class="fa fa-angle-double-left"></i> Trở về</a>
         </div>
-
+        <!--Thông báo lỗi-->
+        <?php require_once __DIR__."/../../../partials/notification.php"; ?>
         <div class="admin-content">
             <div class="form-add-category form-category-product">
                 <form action="" method="POST" role="form" class="form-horizontal">

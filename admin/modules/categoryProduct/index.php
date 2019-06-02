@@ -28,22 +28,8 @@ $category = $db->fetchAll("category_product");
     </div>
     <!--End.button-custom    -->
     <div class="clearfix"></div>
-    <div class="notification-text">
-        <?php if (isset($_SESSION['success'])) :?>
-            <div class="alert alert-success">
-                <?php echo $_SESSION['success']; unset($_SESSION['success']); ?>
-            </div>
-        <?php endif; ?>
-    </div>
-    <!--End.notification-text-->
-    <div class="notification-text">
-        <?php if (isset($_SESSION['error'])) :?>
-            <div class="alert alert-danger">
-                <?php echo $_SESSION['error']; unset($_SESSION['error']); ?>
-            </div>
-        <?php endif; ?>
-    </div>
-    <!--End.notification-text-->
+    <!--Thông báo lỗi    -->
+    <?php require_once __DIR__."/../../../partials/notification.php"; ?>
     <div class="admin-content">
         <!-- DataTables Example -->
         <div class="card mb-3">

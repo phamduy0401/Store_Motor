@@ -26,18 +26,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // error trống có nghĩa là không có lỗi
     if(empty($error)){
-        $id_update = $db->update("category_product", $data, array("id" => $id));
+        if($EditCategory['name'] != $data['name']){
+            $isset = $db->fetchOne("category_product","name = '".$data['name']."' ");
+            if (count($isset) > 0)
+            {
+                $_SESSION['error'] = "Tên danh mục đã tồn tại !";
+            }
+            else
+            {
+                $id_update = $db->update("category_product", $data, array("id" => $id));
 //        print_r($id_update);
-        if($id_update > 0)
-        {
-            $_SESSION['success'] = "Cập nhật thành công";
-            redirectAdmin("categoryProduct");
+                if($id_update > 0)
+                {
+                    $_SESSION['success'] = "Cập nhật thành công";
+                    redirectAdmin("categoryProduct");
+                }
+                else
+                {
+                    $_SESSION['error'] = "Dữ liệu không thay đổi";
+                    redirectAdmin("categoryProduct");
+                }
+            }
         }
         else
         {
-            $_SESSION['error'] = "Dữ liệu không thay đổi";
-            redirectAdmin("categoryProduct");
+            $id_update = $db->update("category_product", $data, array("id" => $id));
+//        print_r($id_update);
+            if($id_update > 0)
+            {
+                $_SESSION['success'] = "Cập nhật thành công";
+                redirectAdmin("categoryProduct");
+            }
+            else
+            {
+                $_SESSION['error'] = "Dữ liệu không thay đổi";
+                redirectAdmin("categoryProduct");
+            }
         }
+
     }
 }
 ?>
@@ -65,7 +91,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         <div class="button-custom">
             <a class="btn-add" href="index.php"><i class="fa fa-angle-double-left"></i> Trở về</a>
         </div>
-
+        <!--Thông báo lỗi-->
+        <?php require_once __DIR__."/../../../partials/notification.php"; ?>
+        <!--End.notification-text-->
         <div class="admin-content">
             <div class="form-add-category form-category-product">
                 <form action="" method="POST" role="form" class="form-horizontal">

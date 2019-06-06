@@ -20,7 +20,6 @@
     <!-- Custom styles for this template-->
     <link href="<?php echo base_url() ?>public/admin/css/sb-admin.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>public/admin/css/style-admin.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
@@ -115,14 +114,14 @@
                 </ul>
             </div>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="charts.html">
+        <li class="nav-item <?php echo isset($open) && $open == 'product' ? 'active' : '' ?>">
+            <a class="nav-link" href="<?php echo modules("product") ?>">
                 <i class="fas fa-fw fa-chart-area"></i>
                 <span>Sản phẩm</span>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="tables.html">
+        <li class="nav-item <?php echo isset($open) && $open == 'post' ? 'active' : '' ?>">
+            <a class="nav-link" href="<?php echo modules("post") ?>">
                 <i class="fas fa-fw fa-table"></i>
                 <span>Tin tức</span></a>
         </li>

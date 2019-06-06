@@ -86,5 +86,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>
     <!--End.container-fluid-->
 
-
 <?php require_once __DIR__."/../../layouts/footer.php"; ?>

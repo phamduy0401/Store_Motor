@@ -11,15 +11,32 @@ if(empty($EditCategory))
     $_SESSION['error'] = "Dữ liệu không tồn tại";
     redirectAdmin("categoryPost");
 }
-$num = $db->delete("category_post", $id);
-if ($num > 0)
+
+/*
+ * Kiểm tra xem danh mục có sản phẩm
+ * */
+
+$is_post = $db->fetchOne("post", " category_id = $id ");
+//_debug($is_post);die;
+if ($is_post == NULL)
 {
-    $_SESSION['success'] = "Xóa thành công";
-    redirectAdmin("categoryPost");
+    $num = $db->delete("category_post", $id);
+    if ($num > 0)
+    {
+        $_SESSION['success'] = "Xóa thành công";
+        redirectAdmin("categoryPost");
+    }
+    else
+    {
+        $_SESSION['error'] = "Xóa thất bại";
+        redirectAdmin("categoryPost");
+    }
 }
 else
 {
-    $_SESSION['error'] = "Xóa thất bại";
-    redirectAdmin("categoryPost");
+    $_SESSION['error'] = "Danh mục có bài viết ! Bạn không thể xóa";
+    redirectAdmin("categoryProduct");
 }
+
+
 ?>

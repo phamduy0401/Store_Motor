@@ -80,12 +80,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
             <li class="breadcrumb-item">
                 <a href="index.php">Danh mục</a>
             </li>
-            <li class="breadcrumb-item active">Sửa danh mục sản phẩm</li>
+            <li class="breadcrumb-item active">Thông tin danh mục sản phẩm</li>
         </ol>
         <!-- End.Breadcrumbs-->
 
         <div class="admin-title-top">
-            <h1>Sửa danh mục sản phẩm</h1>
+            <h1>Thông tin danh mục sản phẩm</h1>
         </div>
         <!-- End. admin-title-top   -->
         <div class="button-custom">

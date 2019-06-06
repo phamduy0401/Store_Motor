@@ -43,7 +43,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 ?>
 <?php require_once __DIR__."/../../layouts/header.php"; ?>
 
-
     <!--Nội dụng-->
     <div class="container-fluid">
         <!-- Breadcrumbs-->
@@ -87,6 +86,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         <!--End.admin-content-->
     </div>
     <!--End.container-fluid-->
-
 
 <?php require_once __DIR__."/../../layouts/footer.php"; ?>

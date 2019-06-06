@@ -1,7 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: DELL
- * Date: 5/31/2019
- * Time: 8:20 PM
- */
+//session_start();
+//require_once  __DIR__."/../../libraries/Database.php";
+//require_once __DIR__."/../../libraries/Function.php";
+//$db = new Database;
+
+define("ROOT", $_SERVER['DOCUMENT_ROOT'] ."/storemotor/public/uploads/");
+
+?>

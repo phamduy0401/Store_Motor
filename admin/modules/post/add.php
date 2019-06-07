@@ -46,30 +46,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     // error trống có nghĩa là không có lỗi
     if(empty($error))
     {
-        if (isset($_FILES['thumbar']))
-        {
-            $file_name = $_FILES['thumbar']['name'];
-            $file_tmp = $_FILES['thumbar']['tmp_name'];
-            $file_type = $_FILES['thumbar']['type'];
-            $file_erro = $_FILES['thumbar']['error'];
-
-            if ($file_erro == 0){
-                $part = ROOT ."post/";
-                $data['thumbar'] = $file_name;
-            }
-        }
-//        _debug($data);
-        $id_insert = $db->insert("post", $data);
-        if ($id_insert)
-        {
-            move_uploaded_file($file_tmp, $part.$file_name);
-            $_SESSION['success'] = "Thêm mới thành công";
-            redirectAdmin("post");
+        $isset = $db->fetchOne("post","name = '".$data['name']."' ");
+        if(count($isset) > 0){
+            $_SESSION['error'] = "Tên tin tức đã tồn tại";
         }
         else
         {
-            $_SESSION['error'] = "Thêm mới thất bại";
+            if (isset($_FILES['thumbar']))
+            {
+                $file_name = $_FILES['thumbar']['name'];
+                $file_tmp = $_FILES['thumbar']['tmp_name'];
+                $file_type = $_FILES['thumbar']['type'];
+                $file_erro = $_FILES['thumbar']['error'];
+
+                if ($file_erro == 0){
+                    $part = ROOT ."post/";
+                    $data['thumbar'] = $file_name;
+                }
+            }
+//        _debug($data);
+            $id_insert = $db->insert("post", $data);
+            if ($id_insert)
+            {
+                move_uploaded_file($file_tmp, $part.$file_name);
+                $_SESSION['success'] = "Thêm mới thành công";
+                redirectAdmin("post");
+            }
+            else
+            {
+                $_SESSION['error'] = "Thêm mới thất bại";
+            }
         }
+
     }
 }
 ?>

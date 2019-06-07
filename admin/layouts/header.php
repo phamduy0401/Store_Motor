@@ -125,5 +125,10 @@
                 <i class="fas fa-fw fa-table"></i>
                 <span>Tin tức</span></a>
         </li>
+        <li class="nav-item <?php echo isset($open) && $open == 'admin' ? 'active' : '' ?>">
+            <a class="nav-link" href="<?php echo modules("admin") ?>">
+                <i class="fa fa-user"></i>
+                <span>Admin</span></a>
+        </li>
     </ul>
     <div id="content-wrapper">

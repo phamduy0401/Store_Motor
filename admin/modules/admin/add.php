@@ -2,22 +2,18 @@
 $open = "admin";
 require_once __DIR__."/../../autoload/autoload.php";
 
-///*
-// * Lấy danh sách danh mục sản phẩm
-// */
-//$category = $db->fetchAll('category_product');
+$data =
+    [
+        "name" => postInput('name'),
+        "email" => postInput('email'),
+        "phone" => postInput('phone'),
+        "address" => postInput('address'),
+        "password" => MD5(postInput('password')),
+        "level" => postInput('level')
+    ];
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $data =
-        [
-            "name" => postInput('name'),
-            "email" => postInput('email'),
-            "phone" => postInput('phone'),
-            "address" => postInput('address'),
-            "password" => postInput('password'),
-            "level" => postInput('level')
-        ];
 
     $error = [];
 
@@ -27,6 +23,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     if (postInput('email') == ''){
         $error['email'] = "Yêu cầu nhập đầy đủ thông tin";
+    }
+    else
+    {
+        $is_check = $db -> fetchOne("admin", " email = '".$data['email']."' ");
+
+        if ($is_check != NULL)
+        {
+            $error['email'] = "Email đã tồn tại";
+        }
     }
 
     if (postInput('phone') == ''){
@@ -46,40 +51,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $error['avatar'] = "Yêu cầu chọn hình ảnh";
     }
 
+    // Check lỗi password
+    if ($data['password'] != MD5(postInput("re_password")))
+    {
+        $error['password'] = "Mật khẩu không khớp";
+    }
+
 
     // error trống có nghĩa là không có lỗi
     if(empty($error))
     {
-        $isset = $db->fetchOne("admin","name = '".$data['name']."' ");
-        if(count($isset) > 0){
-            $_SESSION['error'] = "Tên tài khoản đã tồn tại";
+        if (isset($_FILES['avatar']))
+        {
+            $file_name = $_FILES['avatar']['name'];
+            $file_tmp = $_FILES['avatar']['tmp_name'];
+            $file_type = $_FILES['avatar']['type'];
+            $file_erro = $_FILES['avatar']['error'];
+
+            if ($file_erro == 0){
+                $part = ROOT ."admin/";
+                $data['avatar'] = $file_name;
+            }
+        }
+//        _debug($data);
+        $id_insert = $db->insert("admin", $data);
+        if ($id_insert)
+        {
+            move_uploaded_file($file_tmp, $part.$file_name);
+            $_SESSION['success'] = "Thêm mới thành công";
+            redirectAdmin("admin");
         }
         else
         {
-            if (isset($_FILES['avatar']))
-            {
-                $file_name = $_FILES['avatar']['name'];
-                $file_tmp = $_FILES['avatar']['tmp_name'];
-                $file_type = $_FILES['avatar']['type'];
-                $file_erro = $_FILES['avatar']['error'];
-
-                if ($file_erro == 0){
-                    $part = ROOT ."admin/";
-                    $data['avatar'] = $file_name;
-                }
-            }
-//        _debug($data);
-            $id_insert = $db->insert("product", $data);
-            if ($id_insert)
-            {
-                move_uploaded_file($file_tmp, $part.$file_name);
-                $_SESSION['success'] = "Thêm mới thành công";
-                redirectAdmin("product");
-            }
-            else
-            {
-                $_SESSION['error'] = "Thêm mới thất bại";
-            }
+            $_SESSION['error'] = "Thêm mới thất bại";
         }
 
     }
@@ -119,7 +123,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                             <div class="form-border-left">
                                 <div class="form-group">
                                     <label for="exampleInputCategory">Họ và tên</label>
-                                    <input type="text" class="form-control" id="exampleInputCategory" name="name" placeholder="Mời bạn nhập tên sản phẩm">
+                                    <input type="text" class="form-control" id="exampleInputCategory" name="name" value="<?php  echo $data['name'] ?>" placeholder="Mời bạn nhập tên sản phẩm">
                                     <?php if (isset($error['name'])): ?>
                                         <p class="text-danger">
                                             <?php echo $error['name'] ?>
@@ -129,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
                                 <div class="form-group">
                                     <label for="exampleInputCategory">Email</label>
-                                    <input type="email" class="form-control" id="exampleInputCategory" name="email" placeholder="Mời bạn nhập địa chỉ email">
+                                    <input type="email" class="form-control" id="exampleInputCategory" name="email" value="<?php  echo $data['email'] ?>" placeholder="Mời bạn nhập địa chỉ email">
                                     <?php if (isset($error['email'])): ?>
                                         <p class="text-danger">
                                             <?php echo $error['email'] ?>
@@ -139,7 +143,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
                                 <div class="form-group">
                                     <label for="exampleInputCategory">Số điện thoại</label>
-                                    <input type="number" class="form-control" id="exampleInputCategory" name="phone" placeholder="Mời bạn nhập số điện thoại">
+                                    <input type="number" class="form-control" id="exampleInputCategory" name="phone" value="<?php  echo $data['phone'] ?>" placeholder="Mời bạn nhập số điện thoại">
                                     <?php if (isset($error['phone'])): ?>
                                         <p class="text-danger">
                                             <?php echo $error['phone'] ?>
@@ -149,7 +153,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
                                 <div class="form-group">
                                     <label for="exampleInputCategory">Địa chỉ</label>
-                                    <input type="text" class="form-control" id="exampleInputCategory" name="address" placeholder="Mời bạn nhập địa chỉ">
+                                    <input type="text" class="form-control" id="exampleInputCategory" name="address" value="<?php  echo $data['address'] ?>" placeholder="Mời bạn nhập địa chỉ">
                                     <?php if (isset($error['address'])): ?>
                                         <p class="text-danger">
                                             <?php echo $error['address'] ?>

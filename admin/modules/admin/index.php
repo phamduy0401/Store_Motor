@@ -2,13 +2,10 @@
 $open = "admin";
 require_once __DIR__."/../../autoload/autoload.php";
 
-// Lấy tên danh mục sản phẩm
-$product = $db->fetchAll("product");
-//
-//$sql = "SELECT product.*,category_product.name as namecate FROM product
-//       LEFT JOIN category_product on category_product.id = $product.category_id";
-//$sql = "SELECT product.*,category_product.name as namecate FROM product
-//    LEFT JOIN category_product on category.id = product.category_id";
+$admin = $db->fetchAll("admin");
+
+$sql = "SELECT admin.* FROM admin ORDER BY ID DESC ";
+
 ?>
 <?php require_once __DIR__."/../../layouts/header.php"; ?>
 
@@ -20,11 +17,11 @@ $product = $db->fetchAll("product");
             <li class="breadcrumb-item">
                 <a href="#">Trang chủ</a>
             </li>
-            <li class="breadcrumb-item active">Sản phẩm</li>
+            <li class="breadcrumb-item active">Admin</li>
         </ol>
         <!-- End.Breadcrumbs-->
         <div class="admin-title-top">
-            <h1>Sản phẩm</h1>
+            <h1>Admin</h1>
         </div>
         <!-- End. admin-title-top   -->
         <div class="button-custom">
@@ -46,30 +43,24 @@ $product = $db->fetchAll("product");
                             <thead>
                             <tr>
                                 <th>STT</th>
-                                <th>Tên sản phẩm</th>
-                                <th>Slug</th>
-                                <th>Ảnh</th>
-                                <th>Thông tin</th>
+                                <th>Tên admin - nhân viên</th>
+                                <th>Số điện thoại</th>
+                                <th>Email</th>
+                                <th>Ảnh avata</th>
                                 <th>Ngày tạo</th>
                                 <th>Trạng thái</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <?php $stt = 1; foreach ($product as $item): ?>
+                            <?php $stt = 1; foreach ($admin as $item): ?>
                                 <tr>
                                     <td><?php echo $stt ?></td>
                                     <td><?php echo $item['name'] ?></td>
-                                    <td><?php echo $item['slug'] ?></td>
+                                    <td><?php echo $item['phone'] ?></td>
+                                    <td><?php echo $item['email'] ?></td>
                                     <td>
-                                        <img src="<?php echo uploads() ?>product/<?php echo $item['thumbar'] ?>" width="80px" height="80px" />
+                                        <img src="<?php echo uploads() ?>admin/<?php echo $item['avatar'] ?>" width="80px" height="80px" />
                                     </td>
-                                    <td>
-                                        <ul style="margin: 0; padding: 0;">
-                                            <li>Giá: <?php echo $item['price'] ?> VNĐ</li>
-                                            <li>Số lượng: <?php echo $item['number'] ?> xe</li>
-                                        </ul>
-                                    </td>
-
                                     <td><?php echo $item['created_at'] ?></td>
                                     <td>
                                         <ul class="list-action">

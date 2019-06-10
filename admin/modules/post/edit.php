@@ -16,7 +16,7 @@ if(empty($Editpost))
 }
 
 
-$category = $db->fetchAll('category_product');
+$category = $db->fetchAll('category_post');
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         <!-- End.Breadcrumbs-->
 
         <div class="admin-title-top">
-            <h1>Thông tin sản phẩm</h1>
+            <h1>Thông tin tin tức</h1>
         </div>
         <!-- End. admin-title-top   -->
         <div class="button-custom">

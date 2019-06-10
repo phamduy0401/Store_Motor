@@ -45,6 +45,7 @@ $category = $db->fetchAll("category_post");
                                 <th>STT</th>
                                 <th>Tên danh mục</th>
                                 <th>Slug</th>
+                                <th>Home</th>
                                 <th>Ngày tạo</th>
                                 <th>Trạng thái</th>
                             </tr>
@@ -55,6 +56,11 @@ $category = $db->fetchAll("category_post");
                                     <td><?php echo $stt ?></td>
                                     <td><?php echo $item['name'] ?></td>
                                     <td><?php echo $item['slug'] ?></td>
+                                    <td>
+                                        <a class="btn <?php echo $item['home'] == 1 ? 'btn-success' : 'btn-danger' ?>" href="home.php?id=<?php echo $item['id'] ?>">
+                                            <?php echo $item['home'] == 1 ? 'Active' : 'Pause' ?>
+                                        </a>
+                                    </td>
                                     <td><?php echo $item['created_at'] ?></td>
                                     <td>
                                         <ul class="list-action">

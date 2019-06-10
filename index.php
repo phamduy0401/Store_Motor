@@ -1,5 +1,31 @@
 <?php
 require_once __DIR__."/autoload/autoload.php";
+/*
+ * Lấy ra tất cả các danh mục sản phẩm được active - hiển thị
+ * */
+$sqlHomecate = "SELECT * FROM category_product WHERE  home = 1 ORDER BY updated_at";
+$CategoryProductHome = $db->fetchsql($sqlHomecate);
+_debug($CategoryProductHome);
+
+/*
+ * Lấy ra tất cả các danh mục tin tức được active - hiển thị
+ * */
+$sqlHomecateNew = "SELECT * FROM category_post WHERE  home = 1 ORDER BY updated_at";
+$CategoryPostHome = $db->fetchsql($sqlHomecateNew);
+
+/*
+ * Lấy ra tất cả các sản phẩm được active - hiển thị
+ * */
+$sqlHomeProduct = "SELECT * FROM product WHERE  home = 1 ORDER BY updated_at";
+$ProductHome = $db->fetchsql($sqlHomeProduct);
+
+/*
+ * Lấy ra tất cả các tin tức được active - hiển thị
+ * */
+$sqlHomePost = "SELECT * FROM product WHERE  home = 1 ORDER BY updated_at";
+$PostHome = $db->fetchsql($sqlHomePost);
+
+
 ?>
 
 <?php require_once __DIR__."/layouts/header.php"; ?>

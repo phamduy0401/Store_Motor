@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                             <div class="form-border-left">
                                 <div class="form-group">
                                     <label for="exampleInputCategory">Tiêu đề</label>
-                                    <input type="text" class="form-control" id="exampleInputCategory" name="name" placeholder="Mời bạn tiêu đề tin tức">
+                                    <input type="text" class="form-control" id="exampleInputCategory" name="name" placeholder="Mời bạn nhập tiêu đề tin tức">
                                     <?php if (isset($error['name'])): ?>
                                         <p class="text-danger">
                                             <?php echo $error['name'] ?>
@@ -154,7 +154,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                                 <div class="form-group">
                                     <label for="exampleInputCategory">Danh mục tin tức</label>
                                     <select class="form-control" name="category_id">
-                                        <option value="">- Chọn danh mục sản phẩm -</option>
+                                        <option value="">- Chọn danh mục tin tức -</option>
                                         <?php foreach ($category as $item): ?>
                                             <option value="<?php echo $item['id'] ?>">
                                                 <?php echo $item['name'] ?>

@@ -44,6 +44,7 @@ $post = $db->fetchAll("post");
                                 <th>STT</th>
                                 <th>Tiêu đề</th>
                                 <th>Slug</th>
+                                <th>Home</th>
                                 <th>Ảnh</th>
                                 <th>Ngày tạo</th>
                                 <th>Trạng thái</th>
@@ -55,6 +56,11 @@ $post = $db->fetchAll("post");
                                     <td><?php echo $stt ?></td>
                                     <td><?php echo $item['name'] ?></td>
                                     <td><?php echo $item['slug'] ?></td>
+                                    <td>
+                                        <a class="btn <?php echo $item['home'] == 1 ? 'btn-success' : 'btn-danger' ?>" href="home.php?id=<?php echo $item['id'] ?>">
+                                            <?php echo $item['home'] == 1 ? 'Active' : 'Pause' ?>
+                                        </a>
+                                    </td>
                                     <td>
                                         <img src="<?php echo uploads() ?>post/<?php echo $item['thumbar'] ?>" width="80px" height="80px" />
                                     </td>

@@ -163,6 +163,21 @@ if ( ! function_exists('redirect'))
 }
 
 
+function formatPrice($number)
+{
+    $number = intval($number);
+    return $number = number_format($number,0,',','.') . "đ";
+}
+
+function formatpricesale($number, $sale)
+{
+    $number = intval($number);
+    $sale = intval($sale);
+
+    $price = $number*(100 - $sale)/100;
+    return formatPrice($price);
+}
+
 ?>
 
 

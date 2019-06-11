@@ -16,7 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
             "price" => postInput('price'),
             "number" => postInput('number'),
             "short_description" => postInput('short_description'),
-            "content" => postInput('content')
+            "content" => postInput('content'),
+            "sale" => postInput('sale')
         ];
 
     $error = [];

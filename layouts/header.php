@@ -1,4 +1,15 @@
+<?php
+/*
+ * Lấy ra tất cả các danh mục sản phẩm được active - hiển thị
+ * */
 
+$sqlHomecate = "SELECT name, id FROM category_product WHERE  home = 1 ORDER BY updated_at";
+//$sqlHomecate = "SELECT * FROM category_product WHERE  home = 1 ORDER BY updated_at";
+$CategoryProductHome = $db->fetchsql($sqlHomecate);
+//_debug($CategoryProductHome);
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,7 +38,7 @@
             <div class="container">
                 <div class="row clearfix">
                     <div class="col-md-6" id="header-text">
-                        <a>Tiền TM</a><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </b>
+                        <a>Motor Cao Sơn</a><b>xin kính chào quý khách !</b>
                     </div>
                     <div class="col-md-6">
                         <nav id="header-nav-top">
@@ -74,7 +85,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="">
-                        <img src="images/logo-default.png">
+                        <img class="logo-img" src="<?php echo uploads() ?>/logo/logo2.png">
                     </a>
                 </div>
                 <div class="col-md-3" id="header-right">
@@ -99,25 +110,22 @@
     <div id="menunav">
         <div class="container">
             <nav>
-                <div class="home pull-left">
-                    <a href="">Trang chủ</a>
-                </div>
+<!--                <div class="home pull-left">-->
+<!--                    <a href="">Trang chủ</a>-->
+<!--                </div>-->
                 <!--menu main-->
                 <ul id="menu-main">
                     <li>
-                        <a href="">Shop</a>
+                        <a href="">Trang chủ</a>
                     </li>
                     <li>
-                        <a href="">Mobile</a>
+                        <a href="">Sản phẩm</a>
                     </li>
                     <li>
-                        <a href="">Contac</a>
+                        <a href="">Tin tức</a>
                     </li>
                     <li>
-                        <a href="">Blog</a>
-                    </li>
-                    <li>
-                        <a href="">About us</a>
+                        <a href="">Liên hệ</a>
                     </li>
                 </ul>
                 <!-- end menu main-->
@@ -142,14 +150,16 @@
                     <ul>
                         <?php foreach ($category_product as $item) : ?>
                             <li>
-                                <a href="danh-muc.php?id=<?php echo $item['id'] ?>"><?php echo $item['name'] ?></a>
+                                <a href="danh-muc.php?id=<?php echo $item['id'] ?>">
+                                    <?php echo $item['name'] ?>
+                                </a>
                             </li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
 
                 <div class="box-left box-menu">
-                    <h3 class="box-title"><i class="fa fa-warning"></i>  Sản phẩm mới </h3>
+                    <h3 class="box-title"><i class="fa fa-motorcycle"></i>  Sản phẩm mới </h3>
                     <!--  <marquee direction="down" onmouseover="this.stop()" onmouseout="this.start()"  > -->
                     <ul>
                         <?php foreach ($productNew as $item) : ?>
@@ -158,71 +168,13 @@
                                     <img src="<?php echo uploads() ?>product/<?php echo $item['thumbar'] ?>" class="img-responsive pull-left" width="80" height="80">
                                     <div class="info pull-right">
                                         <p class="name"><?php echo $item['name'] ?></p >
-                                        <b class="price">Giá: <?php echo $item['price'] ?> đ</b><br>
-<!--                                        <b class="sale">Giá: 7.000.000 đ</b><br>-->
+                                        <b class="price"><?php echo formatPrice($item['price']) ?></b><br>
+                                        <b class="sale"><?php echo formatpricesale($item['price'],$item['sale']) ?></b><br>
 <!--                                        <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>-->
                                     </div>
                                 </a>
                             </li>
                         <?php endforeach; ?>
-                    </ul>
-                    <!-- </marquee> -->
-                </div>
-
-                <div class="box-left box-menu">
-                    <h3 class="box-title"><i class="fa fa-warning"></i>  Sản phẩm mới </h3>
-                    <!--  <marquee direction="down" onmouseover="this.stop()" onmouseout="this.start()"  > -->
-                    <ul>
-
-                        <li class="clearfix">
-                            <a href="">
-                                <img src="images/16-270x270.png" class="img-responsive pull-left" width="80" height="80">
-                                <div class="info pull-right">
-                                    <p class="name"> Loa  mới nhất 2016  Loa  mới nhất 2016 Loa  mới nhất 2016</p >
-                                    <b class="price">Giảm giá: 6.090.000 đ</b><br>
-                                    <b class="sale">Giá gốc: 7.000.000 đ</b><br>
-                                    <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="clearfix">
-                            <a href="">
-                                <img src="images/16-270x270.png" class="img-responsive pull-left" width="80" height="80">
-                                <div class="info pull-right">
-                                    <p class="name"> Loa  mới nhất 2016  Loa  mới nhất 2016 Loa  mới nhất 2016</p >
-                                    <b class="price">Giảm giá: 6.090.000 đ</b><br>
-                                    <b class="sale">Giá gốc: 7.000.000 đ</b><br>
-                                    <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="clearfix">
-                            <a href="">
-                                <img src="images/16-270x270.png" class="img-responsive pull-left" width="80" height="80">
-                                <div class="info pull-right">
-                                    <p class="name"> Loa  mới nhất 2016  Loa  mới nhất 2016 Loa  mới nhất 2016</p >
-                                    <b class="price">Giảm giá: 6.090.000 đ</b><br>
-                                    <b class="sale">Giá gốc: 7.000.000 đ</b><br>
-                                    <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>
-
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="clearfix">
-                            <a href="">
-                                <img src="images/16-270x270.png" class="img-responsive pull-left" width="80" height="80">
-                                <div class="info pull-right">
-                                    <p class="name"> Loa  mới nhất 2016  Loa  mới nhất 2016 Loa  mới nhất 2016</p >
-                                    <b class="price">Giảm giá: 6.090.000 đ</b><br>
-                                    <b class="sale">Giá gốc: 7.000.000 đ</b><br>
-                                    <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>
-                                </div>
-                            </a>
-                        </li>
-
                     </ul>
                     <!-- </marquee> -->
                 </div>

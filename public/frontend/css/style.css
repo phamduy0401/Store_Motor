@@ -14,10 +14,10 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-size: 12px;
+    /*font-size: 12px;*/
     font-family: "Roboto";
     color: #444;
-    font-weight: 400;
+    /*font-weight: 400;*/
 }
 .container {
     padding: 0px;

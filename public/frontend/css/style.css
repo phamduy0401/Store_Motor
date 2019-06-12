@@ -620,11 +620,11 @@ h1,h2,h3,h4,h5,h6
 {
     font-weight: bold;
     text-transform: uppercase;
-    color: #444;
+    color: #fff;
     line-height: 15px;
     padding: 10px 20px;
     font-size: 20px;
-
+    padding-left: 0px;
 }
 
 .box-footer
@@ -656,19 +656,20 @@ h1,h2,h3,h4,h5,h6
 
 #footer-support i
 {
-    color: #ea3a3c;
+    color: #fff;
 }
 
 
 #footer-support p
 {
-    font-size: 13px;
+    font-size: 14px;
     padding: 5px 5px;
+    color: #fff;
 }
 
 #footer-button
 {
-    background: #eeeeee;
+    background: #444;
 }
 
 #ft-bottom

@@ -112,10 +112,10 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
             <nav>
                 <ul id="menu-main">
                     <li>
-                        <a href="index.php">Trang chủ</a>
+                        <a href="<?php echo base_url() ?>">Trang chủ</a>
                     </li>
                     <li>
-                        <a href="">Sản phẩm</a>
+                        <a href="page-product.php">Sản phẩm</a>
                     </li>
                     <li>
                         <a href="">Tin tức</a>
@@ -146,7 +146,7 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
                     <ul>
                         <?php foreach ($category_product as $item) : ?>
                             <li>
-                                <a href="danh-muc.php?id=<?php echo $item['id'] ?>">
+                                <a href="category-product.php?id=<?php echo $item['id'] ?>">
                                     <?php echo $item['name'] ?>
                                 </a>
                             </li>
@@ -160,7 +160,7 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
                     <ul>
                         <?php foreach ($productNew as $item) : ?>
                             <li class="clearfix">
-                                <a href="">
+                                <a href="product-detail.php?id=<?php echo $item['id'] ?>">
                                     <img src="<?php echo uploads() ?>product/<?php echo $item['thumbar'] ?>" class="img-responsive pull-left" width="80" height="80">
                                     <div class="info pull-right">
                                         <p class="name"><?php echo $item['name'] ?></p >

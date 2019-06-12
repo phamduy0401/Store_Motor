@@ -117,7 +117,7 @@ foreach ($CategoryProductHome as $item)
                                     <b class="price"><?php echo formatpricesale($item['price'],$item['sale']) ?></b></p>
                             </div>
                             <div class="hidenitem">
-                                <p><a href=""><i class="fa fa-search"></i></a></p>
+                                <p><a href="product-detail.php?id=<?php echo $item['id'] ?>"><i class="fa fa-search"></i></a></p>
                                 <p><a href=""><i class="fa fa-heart"></i></a></p>
                                 <p><a href=""><i class="fa fa-shopping-basket"></i></a></p>
                             </div>
@@ -127,6 +127,14 @@ foreach ($CategoryProductHome as $item)
             </div>
         </div>
         <?php endforeach; ?>
+
+        <div class="banner-motor">
+            <div class="bannerBlock imageHover">
+                <a href="">
+                    <img src="<?php echo base_url() ?>public/frontend/images/glx.png" alt="Kawasaki">
+                </a>
+            </div>
+        </div>
     </section>
 </div>
 <?php require_once __DIR__."/layouts/footer.php"; ?>

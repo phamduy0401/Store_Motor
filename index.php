@@ -33,7 +33,7 @@ $data = [];
 foreach ($CategoryProductHome as $item)
 {
     $cateId = intval($item['id']);
-    $sql = "SELECT * FROM product WHERE category_id = $cateId";
+    $sql = "SELECT * FROM product WHERE category_id = $cateId and home = 1";
     $productHome = $db->fetchsql($sql);
     $data[$item['name']] = $productHome;
 }
@@ -105,12 +105,12 @@ foreach ($CategoryProductHome as $item)
                 <?php foreach ($value as $item): ?>
                     <div class="col-md-3 col-xs-12 item-product">
                         <div class="item-product-custom border bor">
-                            <a href="">
+                            <a href="product-detail.php?id=<?php echo $item['id'] ?>">
                                 <img src="<?php echo uploads() ?>/product/<?php echo $item['thumbar'] ?>" class="" width="100%" height="180">
                             </a>
                             <div class="info-item">
                                 <h1 class="info-product-item">
-                                    <a href=""><?php echo $item['name'] ?></a>
+                                    <a href="product-detail.php?id=<?php echo $item['id'] ?>"><?php echo $item['name'] ?></a>
                                 </h1>
                                 <p><strike class="sale"><?php echo formatPrice($item['price']) ?></strike>
                                     <br>

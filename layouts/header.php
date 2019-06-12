@@ -110,13 +110,9 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
     <div id="menunav">
         <div class="container">
             <nav>
-<!--                <div class="home pull-left">-->
-<!--                    <a href="">Trang chủ</a>-->
-<!--                </div>-->
-                <!--menu main-->
                 <ul id="menu-main">
                     <li>
-                        <a href="">Trang chủ</a>
+                        <a href="index.php">Trang chủ</a>
                     </li>
                     <li>
                         <a href="">Sản phẩm</a>

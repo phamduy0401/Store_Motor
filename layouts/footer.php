@@ -1,15 +1,5 @@
 </div>
-<div class="container">
-    <div class="col-md-4 bottom-content">
-        <a href=""><img src="images/free-shipping.png"></a>
-    </div>
-    <div class="col-md-4 bottom-content">
-        <a href=""><img src="images/guaranteed.png"></a>
-    </div>
-    <div class="col-md-4 bottom-content">
-        <a href=""><img src="images/deal.png"></a>
-    </div>
-</div>
+
 <div class="container-pluid">
     <section id="footer">
         <div class="container">

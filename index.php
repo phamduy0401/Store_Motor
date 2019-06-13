@@ -112,9 +112,13 @@ foreach ($CategoryProductHome as $item)
                                 <h1 class="info-product-item">
                                     <a href="product-detail.php?id=<?php echo $item['id'] ?>"><?php echo $item['name'] ?></a>
                                 </h1>
-                                <p><strike class="sale"><?php echo formatPrice($item['price']) ?></strike>
-                                    <br>
-                                    <b class="price"><?php echo formatpricesale($item['price'],$item['sale']) ?></b></p>
+                                <?php if ($item['sale'] > 0): ?>
+                                    <p><strike class="sale"><?php echo formatPrice($item['price']) ?></strike>
+                                        <br>
+                                        <b class="price"><?php echo formatpricesale($item['price'],$item['sale']) ?></b></p>
+                                <?php else: ?>
+                                    <p><b style="color: #ea3a3c;"><?php echo formatPrice($item['price']) ?></b></p>
+                                <?php endif;  ?>
                             </div>
                             <div class="hidenitem">
                                 <p><a href="product-detail.php?id=<?php echo $item['id'] ?>"><i class="fa fa-search"></i></a></p>
@@ -135,6 +139,47 @@ foreach ($CategoryProductHome as $item)
                 </a>
             </div>
         </div>
+
+        <div class="page-news">
+            <div class="product-title">
+                <h2>
+                    <a href="#">
+                        Tin tức mới
+                    </a>
+                </h2>
+                <div class="title_hr_office">
+                    <div class="title_hr_icon">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-row">
+                <div class="row">
+                    <?php foreach ($postNew as $item) : ?>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="post-custom">
+                                <div class="post-img">
+                                    <a href="post-detail.php?id=<?php echo $item['id'] ?>" title="<?php echo $item['name'] ?>">
+                                        <img src="<?php echo uploads() ?>post/<?php echo $item['thumbar'] ?>" alt="" />
+                                    </a>
+                                </div>
+                                <div class="post-info">
+                                    <h3 class="post-info-title">
+                                        <a href="post-detail.php?id=<?php echo $item['id'] ?>" title="<?php echo $item['name'] ?>" ><?php echo $item['name'] ?></a>
+                                    </h3>
+                                    <div class="post-des"><?php echo $item['short_description'] ?></div>
+                                    <div class="readMore">
+                                        <a href="post-detail.php?id=<?php echo $item['id'] ?>">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+<!--  End.page      -->
     </section>
 </div>
 <?php require_once __DIR__."/layouts/footer.php"; ?>

@@ -58,9 +58,15 @@ $path = $_SERVER['SCRIPT_NAME'];
                                     <h1 class="info-product-item">
                                         <a href="product-detail.php?id=<?php echo $item['id'] ?>"><?php echo $item['name'] ?></a>
                                     </h1>
-                                    <p><strike class="sale"><?php echo formatPrice($item['price']) ?></strike>
-                                        <br>
-                                        <b class="price"><?php echo formatpricesale($item['price'],$item['sale']) ?></b></p>
+
+                                    <?php if ($item['sale'] > 0): ?>
+                                        <p><strike class="sale"><?php echo formatPrice($item['price']) ?></strike>
+                                            <br>
+                                            <b class="price"><?php echo formatpricesale($item['price'],$item['sale']) ?></b></p>
+                                    <?php else: ?>
+                                        <p><b style="color: #ea3a3c;"><?php echo formatPrice($item['price']) ?></b></p>
+                                    <?php endif;  ?>
+
                                 </div>
                                 <div class="hidenitem">
                                     <p><a href="product-detail.php?id=<?php echo $item['id'] ?>"><i class="fa fa-search"></i></a></p>
@@ -76,7 +82,7 @@ $path = $_SERVER['SCRIPT_NAME'];
             <nav class="pagination-nav">
                 <ul class="pagination">
                     <?php for ($i=1; $i <= $sotrang; $i++) : ?>
-                        <li class=""><a href="<?php echo $path ?>?id=<?php echo $id ?>&&p=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                        <li class="<?php echo isset($_GET['p']) && $_GET['p'] == $i ? 'active' : '' ?>"><a href="<?php echo $path ?>?id=<?php echo $id ?>&&p=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                     <?php endfor; ?>
                 </ul>
             </nav>

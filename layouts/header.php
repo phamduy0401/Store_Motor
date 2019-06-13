@@ -28,6 +28,9 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/frontend/css/style.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/frontend/css/main.css">
 
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=387173625269621&autoLogAppEvents=1"></script>
+
 </head>
 <body>
 <div id="wrapper">
@@ -95,7 +98,7 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
                         </div>
                         <div class="pull-right">
                             <p id="hotline">HOTLINE</p>
-                            <p>0986420994</p>
+                            <p>0336636255</p>
                         </div>
 
                     </div>
@@ -107,10 +110,10 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
 
 
     <!--MENUNAV-->
-    <div id="menunav">
+    <div id="menunav" class="header-fix">
         <div class="container">
             <nav>
-                <ul id="menu-main">
+                <ul id="menu-main" class="menu-custom">
                     <li>
                         <a href="<?php echo base_url() ?>">Trang chủ</a>
                     </li>
@@ -118,7 +121,14 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
                         <a href="page-product.php">Sản phẩm</a>
                     </li>
                     <li>
-                        <a href="">Tin tức</a>
+                        <a href="page-post.php">Tin tức</a>
+<!--                        <ul class="sub-menu">-->
+<!--                            <li>-->
+<!--                                <a href="">-->
+<!--                                    Item1-->
+<!--                                </a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
                     </li>
                     <li>
                         <a href="">Liên hệ</a>
@@ -154,6 +164,19 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
                     </ul>
                 </div>
 
+                <div class="box-left box-menu" >
+                    <h3 class="box-title"><i class="fa fa-book"></i>  Danh mục tin tức</h3>
+                    <ul>
+                        <?php foreach ($category_post as $item) : ?>
+                            <li>
+                                <a href="category-post.php?id=<?php echo $item['id'] ?>">
+                                    <?php echo $item['name'] ?>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+
                 <div class="box-left box-menu">
                     <h3 class="box-title"><i class="fa fa-motorcycle"></i>  Sản phẩm mới </h3>
                     <!--  <marquee direction="down" onmouseover="this.stop()" onmouseout="this.start()"  > -->
@@ -164,9 +187,13 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
                                     <img src="<?php echo uploads() ?>product/<?php echo $item['thumbar'] ?>" class="img-responsive pull-left" width="80" height="80">
                                     <div class="info pull-right">
                                         <p class="name"><?php echo $item['name'] ?></p >
-                                        <b class="price"><?php echo formatPrice($item['price']) ?></b><br>
-                                        <b class="sale"><?php echo formatpricesale($item['price'],$item['sale']) ?></b><br>
-<!--                                        <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>-->
+                                        <?php if ($item['sale'] > 0): ?>
+                                            <p><strike class="sale"><?php echo formatPrice($item['price']) ?></strike>
+                                                <br>
+                                                <b class="price"><?php echo formatpricesale($item['price'],$item['sale']) ?></b></p>
+                                        <?php else: ?>
+                                            <p><b style="color: #ea3a3c;"><?php echo formatPrice($item['price']) ?></b></p>
+                                        <?php endif;  ?>
                                     </div>
                                 </a>
                             </li>

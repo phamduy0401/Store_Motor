@@ -1,12 +1,12 @@
 <?php
-$open = "categorPost";
+$open = "categoryPost";
 require_once __DIR__."/../../autoload/autoload.php";
 
 $id = intval(getInput('id'));
 
-$EditPost = $db->fetchID("category_post", $id);
-//_debug($EditPost);die;
-if(empty($EditPost))
+$EditCategory = $db->fetchID("category_post", $id);
+//_debug($EditCategory);die;
+if(empty($EditCategory))
 {
     $_SESSION['error'] = "Dữ liệu không tồn tại";
     redirectAdmin("categoryPost");

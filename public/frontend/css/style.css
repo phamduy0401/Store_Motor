@@ -180,7 +180,7 @@ h1,h2,h3,h4,h5,h6
 /* ====================MENUNAV================== */
 #menunav
 {
-    background: #444;
+    background: #0a32f7;
     min-height: 40px;
 }
 #menu-main > li
@@ -191,12 +191,12 @@ h1,h2,h3,h4,h5,h6
 {
     color: white;
     font-weight:bold;
-    background: #444;
+    background: #0a32f7;
     line-height: 40px;
     text-transform: uppercase;
     font-size: 12px;
     /*border-left: 1px solid #555;*/
-    border-right: 1px solid #555;
+    border-right: 1px solid #fff;
 }
 #menu-main > li > a
 {
@@ -214,7 +214,7 @@ h1,h2,h3,h4,h5,h6
 }
 #menu-main > li > a:hover
 {
-    background: #666;
+    background: #d11618;
 }
 #main-shopping
 {
@@ -340,6 +340,7 @@ h1,h2,h3,h4,h5,h6
 {
     text-decoration: line-through;
     color: #999;
+    /* display: table; */
 }
 .name
 {
@@ -389,6 +390,7 @@ h1,h2,h3,h4,h5,h6
     color: #999;
     font-size: 13px;
     font-weight: bold;
+    height: 40px;
 }
 .info-item
 {
@@ -670,6 +672,7 @@ h1,h2,h3,h4,h5,h6
 #footer-button
 {
     background: #444;
+    padding: 30px 0px;
 }
 
 #ft-bottom

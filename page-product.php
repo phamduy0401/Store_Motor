@@ -35,18 +35,18 @@ $path = $_SERVER['SCRIPT_NAME'];
 
     <section class="box-main1">
         <div class="product-show">
-<!--            <div class="product-title">-->
-<!--                <h2>-->
-<!--                    <a href="#">-->
-<!--                        --><?php //echo $EditCategory['name'] ?>
-<!--                    </a>-->
-<!--                </h2>-->
-<!--                <div class="title_hr_office">-->
-<!--                    <div class="title_hr_icon">-->
-<!--                        <i class="fa fa-motorcycle" aria-hidden="true"></i>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="product-title">
+                <h2>
+                    <a href="#">
+                        Các loại xe
+                    </a>
+                </h2>
+                <div class="title_hr_office">
+                    <div class="title_hr_icon">
+                        <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
 
             <div class="showitem clearfix">
                 <?php foreach ($product as $item): ?>
@@ -59,9 +59,15 @@ $path = $_SERVER['SCRIPT_NAME'];
                                 <h1 class="info-product-item">
                                     <a href="product-detail.php?id=<?php echo $item['id'] ?>"><?php echo $item['name'] ?></a>
                                 </h1>
-                                <p><strike class="sale"><?php echo formatPrice($item['price']) ?></strike>
-                                    <br>
-                                    <b class="price"><?php echo formatpricesale($item['price'],$item['sale']) ?></b></p>
+
+                                <?php if ($item['sale'] > 0): ?>
+                                    <p><strike class="sale"><?php echo formatPrice($item['price']) ?></strike>
+                                        <br>
+                                        <b class="price"><?php echo formatpricesale($item['price'],$item['sale']) ?></b></p>
+                                <?php else: ?>
+                                    <p><b style="color: #ea3a3c;"><?php echo formatPrice($item['price']) ?></b></p>
+                                <?php endif;  ?>
+
                             </div>
                             <div class="hidenitem">
                                 <p><a href="product-detail.php?id=<?php echo $item['id'] ?>"><i class="fa fa-search"></i></a></p>
@@ -77,7 +83,7 @@ $path = $_SERVER['SCRIPT_NAME'];
             <nav class="pagination-nav">
                 <ul class="pagination">
                     <?php for ($i=1; $i <= $sotrang; $i++) : ?>
-                        <li class=""><a href="<?php echo $path ?>?id=<?php echo $id ?>&&p=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                        <li class="<?php echo isset($_GET['p']) && $_GET['p'] == $i ? 'active' : '' ?>"><a href="<?php echo $path ?>?id=<?php echo $id ?>&&p=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                     <?php endfor; ?>
                 </ul>
             </nav>

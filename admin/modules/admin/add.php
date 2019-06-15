@@ -123,7 +123,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                             <div class="form-border-left">
                                 <div class="form-group">
                                     <label for="exampleInputCategory">Họ và tên</label>
-                                    <input type="text" class="form-control" id="exampleInputCategory" name="name" value="<?php  echo $data['name'] ?>" placeholder="Mời bạn nhập tên sản phẩm">
+                                    <input type="text" class="form-control" id="exampleInputCategory" name="name" value="<?php  echo $data['name'] ?>" placeholder="Mời bạn nhập tên admin">
                                     <?php if (isset($error['name'])): ?>
                                         <p class="text-danger">
                                             <?php echo $error['name'] ?>

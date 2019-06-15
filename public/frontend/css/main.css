@@ -1,3 +1,8 @@
+/* @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+body{
+    font-family: 'Oswald', sans-serif !important;
+} */
+
 .product-show{
     display: table;
 }
@@ -511,6 +516,11 @@
     }
     .no-padding-l{
         padding-left: 5px;
+    }
+    .form-custom{
+        width: 50%;
+        display: table;
+        margin: 0 auto;
     }
 
 }

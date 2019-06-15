@@ -27,6 +27,7 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
     <!--slide-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/frontend/css/style.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/frontend/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=387173625269621&autoLogAppEvents=1"></script>
@@ -47,7 +48,10 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
                         <nav id="header-nav-top">
                             <ul class="list-inline pull-right" id="headermenu">
                                 <li>
-                                    <a href=""><i class="fa fa-unlock"></i> Login</a>
+                                    <a href="dang-nhap.php"><i class="fa fa-unlock"></i> Đăng nhập</a>
+                                </li>
+                                <li>
+                                    <a href="dang-ky.php"><i class="fa fa-users"></i> Đăng ký</a>
                                 </li>
                                 <li>
                                     <a href=""><i class="fa fa-user"></i> My Account <i class="fa fa-caret-down"></i></a>

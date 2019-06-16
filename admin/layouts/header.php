@@ -130,5 +130,11 @@
                 <i class="fa fa-user"></i>
                 <span>Admin</span></a>
         </li>
+
+        <li class="nav-item <?php echo isset($open) && $open == 'user' ? 'active' : '' ?>">
+            <a class="nav-link" href="<?php echo modules("user") ?>">
+                <i class="fa fa-users"></i>
+                <span>User</span></a>
+        </li>
     </ul>
     <div id="content-wrapper">

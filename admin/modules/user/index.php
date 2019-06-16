@@ -1,10 +1,10 @@
 <?php
-$open = "admin";
+$open = "user";
 require_once __DIR__."/../../autoload/autoload.php";
 
-$admin = $db->fetchAll("admin");
+$user = $db->fetchAll("users");
 
-$sql = "SELECT admin.* FROM admin ORDER BY ID DESC ";
+$sql = "SELECT users.* FROM users ORDER BY ID DESC ";
 
 ?>
 <?php require_once __DIR__."/../../layouts/header.php"; ?>
@@ -17,17 +17,12 @@ $sql = "SELECT admin.* FROM admin ORDER BY ID DESC ";
             <li class="breadcrumb-item">
                 <a href="#">Trang chủ</a>
             </li>
-            <li class="breadcrumb-item active">Admin</li>
+            <li class="breadcrumb-item active">User</li>
         </ol>
         <!-- End.Breadcrumbs-->
         <div class="admin-title-top">
-            <h1>Admin</h1>
+            <h1>Tài khoản khách hàng</h1>
         </div>
-        <!-- End. admin-title-top   -->
-        <div class="button-custom">
-            <a class="btn-add" href="add.php"><i class="fa fa-plus"></i> Thêm mới</a>
-        </div>
-        <!--End.button-custom    -->
         <div class="clearfix"></div>
         <!--Thông báo lỗi    -->
         <?php require_once __DIR__."/../../../partials/notification.php"; ?>
@@ -36,37 +31,33 @@ $sql = "SELECT admin.* FROM admin ORDER BY ID DESC ";
             <div class="card mb-3">
                 <div class="card-header">
                     <i class="fas fa-table"></i>
-                    Admin</div>
+                    Tài khoản</div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                             <tr>
                                 <th>STT</th>
-                                <th>Tên admin - nhân viên</th>
+                                <th>Tên khách hàng</th>
                                 <th>Số điện thoại</th>
                                 <th>Email</th>
-                                <th>Ảnh avata</th>
-                                <th>Ngày tạo</th>
+                                <th>Địa chỉ</th>
                                 <th>Trạng thái</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <?php $stt = 1; foreach ($admin as $item): ?>
+                            <?php $stt = 1; foreach ($user as $item): ?>
                                 <tr>
                                     <td><?php echo $stt ?></td>
                                     <td><?php echo $item['name'] ?></td>
                                     <td><?php echo $item['phone'] ?></td>
                                     <td><?php echo $item['email'] ?></td>
-                                    <td>
-                                        <img src="<?php echo uploads() ?>admin/<?php echo $item['avatar'] ?>" width="80px" height="80px" />
-                                    </td>
-                                    <td><?php echo $item['created_at'] ?></td>
+                                    <td><?php echo $item['address'] ?></td>
                                     <td>
                                         <ul class="list-action">
                                             <li class="item-edit">
-                                                <a href="edit.php?id=<?php echo $item['id'] ?>" title="Chỉnh sửa danh mục">
-                                                    <i class="fa fa-edit"></i>
+                                                <a href="view.php?id=<?php echo $item['id'] ?>" title="Xem chi tiết">
+                                                    <i class="fa fa-eye"></i>
                                                 </a>
                                             </li>
                                             <li class="item-delete">

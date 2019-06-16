@@ -62,3 +62,18 @@ a:hover{
 .item-edit{
     background: green !important;
 }
+.info-user ul li i{
+    margin-right: 5px;
+    color: #007bff;
+}
+.info-user ul li span{
+    color: red;
+    font-weight: 600;
+}
+.info-user ul{
+    margin: 0;
+    padding: 0;
+}
+.info-user ul li{
+    margin-bottom: 15px;
+}

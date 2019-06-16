@@ -3,7 +3,7 @@ require_once __DIR__."/autoload/autoload.php";
 /*
  * Lấy ra tất cả các danh mục sản phẩm được active - hiển thị
  * */
-
+//_debug($_SESSION['name_user']);
 $sqlHomecate = "SELECT name, id FROM category_product WHERE  home = 1 ORDER BY updated_at";
 //$sqlHomecate = "SELECT * FROM category_product WHERE  home = 1 ORDER BY updated_at";
 $CategoryProductHome = $db->fetchsql($sqlHomecate);

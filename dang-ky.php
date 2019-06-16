@@ -1,6 +1,12 @@
 <?php
 require_once __DIR__."/autoload/autoload.php";
 
+// Bắt điều kiện nếu đã đăng nhập thành công thì sẽ không được vào trang đăng ký.
+if (isset($_SESSION['name_id']))
+{
+    echo "<script>alert('Bạn đã có tài khoản nên không thể đăng ký thêm tài khoản.');location.href='index.php'</script>";
+}
+
 $data =
     [
         "name" => postInput('name'),
@@ -24,6 +30,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     if ($data['email'] == '')
     {
         $error['email'] = "Yêu cầu nhập đầy đủ thông tin.";
+    }
+    else
+    {
+        $is_check = $db->fetchOne("users","email = '".$data['email']."' ");
+        if ($is_check != NULL)
+        {
+            $error['email'] = "Địa chỉ email đã tồn tại. Yêu cầu nhập địa chỉ email khác.";
+        }
     }
 
 
@@ -50,20 +64,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
     // Kiểm tra mảng error
     if (empty($error)) {
-        $isset = $db->fetchOne("users", "email = '" . $data['email'] . "' ");
-        if (count($isset) > 0) {
-            $_SESSION['error'] = "Email đã tồn tại !";
+        $idinsert = $db->insert('users', $data);
+        if ($idinsert > 0) {
+            $_SESSION['success'] = "Đăng ký thành công";
+            // Nếu đăng ký thành công thì sử dụng câu lệnh header("location: dang-nhap.php");
+            // để chuyển sang trang đăng nhập
+            header("location: dang-nhap.php");
         } else {
-            $idinsert = $db->insert('users', $data);
-            if ($idinsert > 0) {
-                $_SESSION['success'] = "Đăng ký thành công";
-                // Nếu đăng ký thành công thì sử dụng câu lệnh header("location: dang-nhap.php");
-                // để chuyển sang trang đăng nhập
-                header("location: dang-nhap.php");
-            } else {
-                // Thêm thất bại
-                $_SESSION['error'] = "Đăng ký thất bại";
-            }
+            // Thêm thất bại
+            $_SESSION['error'] = "Đăng ký thất bại";
         }
     }
 }

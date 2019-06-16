@@ -47,24 +47,32 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
                     <div class="col-md-6">
                         <nav id="header-nav-top">
                             <ul class="list-inline pull-right" id="headermenu">
-                                <li>
-                                    <a href="dang-nhap.php"><i class="fa fa-unlock"></i> Đăng nhập</a>
-                                </li>
-                                <li>
-                                    <a href="dang-ky.php"><i class="fa fa-users"></i> Đăng ký</a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fa fa-user"></i> My Account <i class="fa fa-caret-down"></i></a>
-                                    <ul id="header-submenu">
-                                        <li><a href="">Contact</a></li>
-                                        <li><a href="">Cart</a></li>
-                                        <li><a href="">Checkout</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fa fa-share-square-o"></i> Checkout</a>
-                                </li>
+                                <!--Kiểm tra điều kiện nếu đăng nhâp tài khoản thì hiện nút thoát hoặc đăng xuất-->
 
+                                <?php if (isset($_SESSION['name_user'])): ?>
+                                    <li>
+                                        Xin chào: <strong style="color: red;"><?php echo $_SESSION['name_user'] ?></strong>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa fa-user"></i> Tài khoản <i class="fa fa-caret-down"></i></a>
+                                        <ul id="header-submenu">
+                                            <li><a href="">Thông tin</a></li>
+                                            <li><a href="">Giỏ hàng</a></li>
+                                            <li><a href="logout.php">Đăng xuất</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="logout.php"><i class="fa fa-share-square-o"></i> Đăng xuất</a>
+                                    </li>
+                                <!--Còn ngược lại sẽ hiển thị đăng ký - đăng nhập-->
+                                <?php else: ?>
+                                    <li>
+                                        <a href="dang-nhap.php"><i class="fa fa-unlock"></i> Đăng nhập</a>
+                                    </li>
+                                    <li>
+                                        <a href="dang-ky.php"><i class="fa fa-users"></i> Đăng ký</a>
+                                    </li>
+                                <?php endif; ?>
                             </ul>
                         </nav>
                     </div>

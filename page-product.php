@@ -72,7 +72,7 @@ $path = $_SERVER['SCRIPT_NAME'];
                             <div class="hidenitem">
                                 <p><a href="product-detail.php?id=<?php echo $item['id'] ?>"><i class="fa fa-search"></i></a></p>
                                 <p><a href=""><i class="fa fa-heart"></i></a></p>
-                                <p><a href=""><i class="fa fa-shopping-basket"></i></a></p>
+                                <p><a href="addcart.php?id=<?php echo $item['id'] ?>"><i class="fa fa-shopping-basket"></i></a></p>
                             </div>
                         </div>
                     </div>

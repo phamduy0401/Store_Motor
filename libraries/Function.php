@@ -178,6 +178,26 @@ function formatpricesale($number, $sale)
     return formatPrice($price);
 }
 
+function sale($number)
+{
+    $number = intval($number);
+    // Nếu đơn hàng < 5 triệu thì sẽ giảm 0%
+    if ($number < 50000000)
+    {
+        return 0;
+    }
+    // Nếu đơn hàng < 10 triệu thì sẽ giảm 5%
+    else if ($number < 100000000)
+    {
+        return 5;
+    }
+    // Còn lại sẽ giảm 10%
+    else
+    {
+        return 10;
+    }
+}
+
 ?>
 
 

@@ -38,7 +38,7 @@ $sanphamcungloai = $db->fetchsql($sql);
                     <?php else: ?>
                         <li><p style="font-size: 20px;"><b style="color: #ea3a3c;"><?php echo formatPrice($detail_product['price']) ?></b></p></li>
                     <?php endif;  ?>
-                    <li><a href="" class="btn btn-default"> <i class="fa fa-shopping-basket"></i>Mua hàng</a></li>
+                    <li><a href="addcart.php?id=<?php echo $item['id'] ?>" class="btn btn-default"> <i class="fa fa-shopping-basket"></i>Mua hàng</a></li>
                 </ul>
             </div>
 
@@ -102,7 +102,7 @@ $sanphamcungloai = $db->fetchsql($sql);
                                 <div class="hidenitem">
                                     <p><a href="product-detail.php?id=<?php echo $item['id'] ?>"><i class="fa fa-search"></i></a></p>
                                     <p><a href=""><i class="fa fa-heart"></i></a></p>
-                                    <p><a href=""><i class="fa fa-shopping-basket"></i></a></p>
+                                    <p><a href="addcart.php?id=<?php echo $item['id'] ?>"><i class="fa fa-shopping-basket"></i></a></p>
                                 </div>
                             </div>
                         </div>

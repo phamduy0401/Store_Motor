@@ -485,7 +485,18 @@ body{
     color: #fff;
     top: 5px;
 }
+.order-cart-list li{
+    display: inline-block;
+    margin-right: 10px;
+}
 
+.order-cart-list li a i{
+    color: #fff;
+    font-size: 16px;
+}
+#qty{
+    width: 70px !important;
+}
 @media(min-width: 992px) {
     .logo-img{
         width: 250px;

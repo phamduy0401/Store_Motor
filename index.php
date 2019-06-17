@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__."/autoload/autoload.php";
+//unset($_SESSION['cart']);
+
 /*
  * Lấy ra tất cả các danh mục sản phẩm được active - hiển thị
  * */
@@ -123,7 +125,7 @@ foreach ($CategoryProductHome as $item)
                             <div class="hidenitem">
                                 <p><a href="product-detail.php?id=<?php echo $item['id'] ?>"><i class="fa fa-search"></i></a></p>
                                 <p><a href=""><i class="fa fa-heart"></i></a></p>
-                                <p><a href=""><i class="fa fa-shopping-basket"></i></a></p>
+                                <p><a href="addcart.php?id=<?php echo $item['id'] ?>"><i class="fa fa-shopping-basket"></i></a></p>
                             </div>
                         </div>
                     </div>

@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2064167-da8e-45f7-b976-fa9b03842d7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/modules/transaction/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/modules/transaction/status.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/remove.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap-nhat-gio-hang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dang-xuat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/autoload/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/autoload/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layouts/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoload/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/autoload/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gio-hang.php" beforeDir="false" afterPath="$PROJECT_DIR$/gio-hang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,56 +21,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/autoload/autoload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dang-xuat.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gio-hang.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/modules/transaction/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315">
-              <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/remove.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/layouts/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="141" column="42" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
+            <state relative-caret-position="348">
+              <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thanh-toan.php">
+        <entry file="file://$PROJECT_DIR$/logout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="85" column="116" selection-start-line="85" selection-start-column="116" selection-end-line="85" selection-end-column="116" />
+            <state>
+              <caret selection-end-line="8" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thong-bao.php">
+        <entry file="file://$PROJECT_DIR$/dang-nhap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="43" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -108,9 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/modules/categoryProduct/delete.php" />
-        <option value="$PROJECT_DIR$/admin/modules/categoryPost/delete.php" />
-        <option value="$PROJECT_DIR$/admin/modules/admin/edit.php" />
         <option value="$PROJECT_DIR$/admin/modules/admin/delete.php" />
         <option value="$PROJECT_DIR$/admin/modules/categoryProduct/index.php" />
         <option value="$PROJECT_DIR$/admin/modules/categoryProduct/home.php" />
@@ -123,13 +124,11 @@
         <option value="$PROJECT_DIR$/admin/modules/post/add.php" />
         <option value="$PROJECT_DIR$/admin/modules/product/add.php" />
         <option value="$PROJECT_DIR$/admin/modules/product/edit.php" />
-        <option value="$PROJECT_DIR$/autoload/autoload.php" />
         <option value="$PROJECT_DIR$/admin/modules/categoryPost/home.php" />
         <option value="$PROJECT_DIR$/category-post.php" />
         <option value="$PROJECT_DIR$/page-post.php" />
         <option value="$PROJECT_DIR$/post-detail.php" />
         <option value="$PROJECT_DIR$/public/frontend/js/main.js" />
-        <option value="$PROJECT_DIR$/layouts/footer.php" />
         <option value="$PROJECT_DIR$/public/frontend/css/style.css" />
         <option value="$PROJECT_DIR$/admin/modules/admin/add.php" />
         <option value="$PROJECT_DIR$/admin/modules/categoryPost/add.php" />
@@ -138,27 +137,32 @@
         <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/dang-ky.php" />
         <option value="$PROJECT_DIR$/admin/modules/user/delete.php" />
-        <option value="$PROJECT_DIR$/admin/autoload/autoload.php" />
         <option value="$PROJECT_DIR$/admin/modules/user/index.php" />
         <option value="$PROJECT_DIR$/admin/modules/admin/index.php" />
         <option value="$PROJECT_DIR$/admin/modules/user/view.php" />
         <option value="$PROJECT_DIR$/public/admin/css/style-admin.css" />
         <option value="$PROJECT_DIR$/admin/modules/categoryPost/edit.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/addcart.php" />
         <option value="$PROJECT_DIR$/public/frontend/css/main.css" />
         <option value="$PROJECT_DIR$/page-product.php" />
         <option value="$PROJECT_DIR$/category-product.php" />
         <option value="$PROJECT_DIR$/product-detail.php" />
         <option value="$PROJECT_DIR$/libraries/Function.php" />
-        <option value="$PROJECT_DIR$/layouts/header.php" />
         <option value="$PROJECT_DIR$/thong-bao.php" />
         <option value="$PROJECT_DIR$/thanh-toan.php" />
-        <option value="$PROJECT_DIR$/admin/layouts/header.php" />
         <option value="$PROJECT_DIR$/admin/modules/transaction/index.php" />
         <option value="$PROJECT_DIR$/admin/modules/transaction/status.php" />
         <option value="$PROJECT_DIR$/remove.php" />
         <option value="$PROJECT_DIR$/gio-hang.php" />
+        <option value="$PROJECT_DIR$/layouts/footer.php" />
+        <option value="$PROJECT_DIR$/cap-nhat-gio-hang.php" />
+        <option value="$PROJECT_DIR$/autoload/autoload.php" />
+        <option value="$PROJECT_DIR$/layouts/header.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/admin/autoload/autoload.php" />
+        <option value="$PROJECT_DIR$/login/index.php" />
+        <option value="$PROJECT_DIR$/dang-xuat.php" />
+        <option value="$PROJECT_DIR$/admin/layouts/header.php" />
       </list>
     </option>
   </component>
@@ -189,44 +193,23 @@
               <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
               <item name="storemotor" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="autoload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
               <item name="storemotor" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="categoryProduct" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="autoload" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
               <item name="storemotor" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
@@ -243,13 +226,6 @@
               <item name="storemotor" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,16 +302,18 @@
       <workItem from="1560701161585" duration="2771000" />
       <workItem from="1560777787908" duration="14643000" />
       <workItem from="1560821475609" duration="11228000" />
+      <workItem from="1560863661732" duration="7069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178481000" />
+    <option name="totallyTimeSpent" value="185550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29198185" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2965204" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -360,27 +338,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/modules/post/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/product/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/product/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/modules/product/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -413,13 +370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="73" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layouts/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -465,13 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/modules/admin/delete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -490,20 +433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autoload/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/autoload/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -560,34 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="73" column="88" selection-start-line="73" selection-start-column="88" selection-end-line="73" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="127" column="84" selection-start-line="127" selection-start-column="44" selection-end-line="127" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thong-bao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dang-nhap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="92" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layouts/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="59" column="69" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -661,38 +562,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="35" lean-forward="true" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product-detail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/layouts/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="141" column="42" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/transaction/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remove.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -705,15 +578,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thanh-toan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
+        <state relative-caret-position="1445">
           <caret line="85" column="116" selection-start-line="85" selection-start-column="116" selection-end-line="85" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thong-bao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/transaction/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gio-hang.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+        <state relative-caret-position="153">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="182" column="6" selection-start-line="182" selection-start-column="6" selection-end-line="182" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap-nhat-gio-hang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remove.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoload/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="132" column="14" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/autoload/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dang-nhap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="43" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dang-xuat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="214" column="22" selection-start-line="214" selection-start-column="22" selection-end-line="214" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/layouts/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
         </state>
       </provider>
     </entry>

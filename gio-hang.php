@@ -58,7 +58,7 @@ if ( !isset($_SESSION['cart']) | count($_SESSION['cart']) == 0)
                                 <img src="<?php echo uploads() ?>product/<?php echo $value['thumbar'] ?>" width="80px" height="80px" />
                             </td>
                             <td>
-                                <input type="number" name="qty" value="<?php echo $value['qty'] ?>" class="form-control" id="qty" min="0"/>
+                                <input type="number" name="qty" value="<?php echo $value['qty'] ?>" class="form-control qty"  min="0"/>
                             </td>
                             <td><?php echo formatPrice($value['price']) ?></td>
                             <td><?php echo formatPrice($value['price'] * $value['qty']) ?></td>
@@ -70,7 +70,7 @@ if ( !isset($_SESSION['cart']) | count($_SESSION['cart']) == 0)
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="btn btn-success" title="Cập nhật">
+                                        <a href="" class="btn btn-success updatecart" data-key=<?php echo $key ?> title="Cập nhật">
                                             <i class="fa fa-refresh"></i>
                                         </a>
                                     </li>

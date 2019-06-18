@@ -125,4 +125,60 @@
             $hidenitem.hide(500);
         })
     })
+
+
+    // $(function () {
+    //     $updatecart = $(".updatecart");
+    //     $updatecart.click(function (e) {
+    //         e.preventDefault();
+    //         $qty = $(this).parents("tr").find(".qty").val();
+    //         console.log($qty);
+    //         $key = $(this).attr("data-key");
+    //         $.ajax({
+    //            url: 'cap-nhat-gio-hang.php',
+    //             type: 'GET',
+    //             data: {'qty':$qty, 'key':$key},
+    //             success:function (data)
+    //             {
+    //                 if (data == 1)
+    //                 {
+    //                     alert("Cập nhật giỏ hàng thành công");
+    //                     location.href = 'gio-hang.php';
+    //                 }
+    //             }
+    //         });
+    //     })
+    // })
+
+
+    $(function(){
+        $updatecart = $(".updatecart");
+        $updatecart.click(function(e) {
+            e.preventDefault();
+            $qty = $(this).parents("tr").find(".qty").val();
+
+            $key = $(this).attr("data-key");
+
+            console.log($key);
+            $.ajax({
+                url: 'cap-nhat-gio-hang.php',
+                type: 'GET',
+                data: {'qty': $qty, 'key':$key},
+                success:function(data)
+                {
+                    if (data == 1)
+                    {
+                        alert('Bạn đã cập nhật giỏ hàng thành công!');
+                        location.href='gio-hang.php';
+                    }
+                    else
+                    {
+                        alert('Xin lỗi! Số lượng bạn mua vượt quá số lượng hàng có trong kho!');
+                        location.href='gio-hang.php';
+                    }
+                }
+            });
+
+        })
+    })
 </script>

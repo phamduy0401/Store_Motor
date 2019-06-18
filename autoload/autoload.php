@@ -26,4 +26,11 @@ $productNew = $db->fetchsql($sqlNew);
 $sqlNew = "SELECT * FROM post WHERE 1 ORDER BY ID DESC LIMIT 6";
 $postNew = $db->fetchsql($sqlNew);
 
+
+/*
+ * Lấy danh sách sản phẩm bán chạy
+ * */
+$sqlPay = "SELECT * FROM product WHERE 1 ORDER BY PAY DESC LIMIT 8";
+$productPay = $db->fetchsql($sqlPay);
+
 ?>

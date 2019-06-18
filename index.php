@@ -88,6 +88,49 @@ foreach ($CategoryProductHome as $item)
     </section>
 
     <section class="box-main1">
+        <div class="product-show product-hot">
+            <div class="product-title">
+                <h2>
+                    <a href="#">
+                        Sản phẩm bán chạy
+                    </a>
+                </h2>
+                <div class="title_hr_office">
+                    <div class="title_hr_icon">
+                        <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showitem">
+                <?php foreach ($productPay as $item): ?>
+                    <div class="col-md-3 col-xs-12 item-product">
+                        <div class="item-product-custom border bor">
+                            <a href="product-detail.php?id=<?php echo $item['id'] ?>">
+                                <img src="<?php echo uploads() ?>/product/<?php echo $item['thumbar'] ?>" class="" width="100%" height="180">
+                            </a>
+                            <div class="info-item">
+                                <h1 class="info-product-item">
+                                    <a href="product-detail.php?id=<?php echo $item['id'] ?>"><?php echo $item['name'] ?></a>
+                                </h1>
+                                <?php if ($item['sale'] > 0): ?>
+                                    <p><strike class="sale"><?php echo formatPrice($item['price']) ?></strike>
+                                        <br>
+                                        <b class="price"><?php echo formatpricesale($item['price'],$item['sale']) ?></b></p>
+                                <?php else: ?>
+                                    <p><b style="color: #ea3a3c;"><?php echo formatPrice($item['price']) ?></b></p>
+                                <?php endif;  ?>
+                            </div>
+                            <div class="hidenitem">
+                                <p><a href="product-detail.php?id=<?php echo $item['id'] ?>"><i class="fa fa-search"></i></a></p>
+                                <p><a href=""><i class="fa fa-heart"></i></a></p>
+                                <p><a href="addcart.php?id=<?php echo $item['id'] ?>"><i class="fa fa-shopping-basket"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
         <?php foreach ($data as $key => $value): ?>
         <div class="product-show">
             <div class="product-title">
@@ -182,6 +225,7 @@ foreach ($CategoryProductHome as $item)
             </div>
         </div>
 <!--  End.page      -->
+
     </section>
 </div>
 <?php require_once __DIR__."/layouts/footer.php"; ?>

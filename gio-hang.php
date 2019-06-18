@@ -27,6 +27,14 @@ if ( !isset($_SESSION['cart']) | count($_SESSION['cart']) == 0)
                 </div>
             </div>
         </div>
+        <div class="notification-text">
+            <?php if (isset($_SESSION['success'])) :?>
+                <div class="alert alert-success">
+                    <?php echo $_SESSION['success']; unset($_SESSION['success']); ?>
+                </div>
+            <?php endif; ?>
+        </div>
+        <!--End.notification-text-->
 
         <div class="order-cart">
             <table class="table table-hover table-bordered" id="shoppingcart_info">
@@ -57,7 +65,7 @@ if ( !isset($_SESSION['cart']) | count($_SESSION['cart']) == 0)
                             <td>
                                 <ul class="order-cart-list">
                                     <li>
-                                        <a href="" class="btn btn-danger" title="Xóa">
+                                        <a href="remove.php?key=<?php echo $key ?>" class="btn btn-danger" title="Xóa">
                                             <i class="fa fa-trash"></i>
                                         </a>
                                     </li>

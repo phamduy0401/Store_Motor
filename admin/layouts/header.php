@@ -136,5 +136,11 @@
                 <i class="fa fa-users"></i>
                 <span>User</span></a>
         </li>
+
+        <li class="nav-item <?php echo isset($open) && $open == 'transaction' ? 'active' : '' ?>">
+            <a class="nav-link" href="<?php echo modules("transaction") ?>">
+                <i class="fa fa-university"></i>
+                <span>Quản lý đơn hàng</span></a>
+        </li>
     </ul>
     <div id="content-wrapper">

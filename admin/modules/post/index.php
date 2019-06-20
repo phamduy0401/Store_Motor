@@ -2,8 +2,11 @@
 $open = "post";
 require_once __DIR__."/../../autoload/autoload.php";
 
-// Lấy tên danh mục tin tức
-$post = $db->fetchAll("post");
+//// Lấy tên danh mục tin tức
+//$post = $db->fetchAll("post");
+
+$sql = "SELECT * FROM post ORDER BY id DESC";
+$post = $db->fetchsql($sql);
 
 ?>
 <?php require_once __DIR__."/../../layouts/header.php"; ?>

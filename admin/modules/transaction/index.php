@@ -2,10 +2,14 @@
 $open = "transaction";
 require_once __DIR__."/../../autoload/autoload.php";
 
-$transaction = $db->fetchAll("transaction");
+//$transaction = $db->fetchAll("transaction");
+//
+//$sql = "SELECT transaction.* , users.name as nameuser , users.phone as phoneuer FROM transaction LEFT JOIN users ON
+//       users.id = transaction.users_id ORDER BY ID DESC";
 
-$sql = "SELECT transaction.* , users.name as nameuser , users.phone as phoneuer FROM transaction LEFT JOIN users ON 
-       users.id = transaction.users_id ORDER BY ID DESC";
+$sql = "SELECT * FROM transaction ORDER BY id DESC";
+//$product = $db->fetchAll("product");
+$transaction = $db->fetchsql($sql);
 
 //_debug($sql);
 
@@ -74,7 +78,7 @@ $sql = "SELECT transaction.* , users.name as nameuser , users.phone as phoneuer 
                                     <td>
                                         <ul class="list-action">
                                             <li class="item-edit">
-                                                <a href="edit.php?id=<?php echo $item['id'] ?>" title="Xem chi tiết">
+                                                <a href="view.php?id=<?php echo $item['id'] ?>" title="Xem chi tiết">
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                             </li>

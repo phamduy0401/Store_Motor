@@ -77,3 +77,24 @@ a:hover{
 .info-user ul li{
     margin-bottom: 15px;
 }
+.infor-user-order{
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.infor-user-order ul{
+    margin: 0;
+    padding: 0;
+}
+.infor-user-order ul li{
+    margin-bottom: 10px;
+}
+.info-list{
+    margin: 0;
+    padding: 0;
+}
+.infor-label{
+    float: left;
+    width: 180px;
+    color: red;
+}

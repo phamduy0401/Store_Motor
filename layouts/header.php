@@ -82,21 +82,14 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
         <div class="container">
             <div class="row" id="header-main">
                 <div class="col-md-5">
-                    <form class="form-inline">
+                    <form action="search.php" method="GET" class="form-inline" enctype="multipart/form-data">
                         <div class="form-group">
-                            <label>
-                                <select name="category" class="form-control">
-                                    <option> All Category</option>
-                                    <option> Dell </option>
-                                    <option> Hp </option>
-                                    <option> Asuc </option>
-                                    <option> Apper </option>
-                                </select>
-                            </label>
-                            <input type="text" name="keywork" placeholder=" input keywork" class="form-control">
-                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            <input type="text" id="searchf" name="search" placeholder="Nhập tên sản phẩm tìm kiếm" class="form-control">
+                            <button type="submit" name="btnsearch" id="searchbtn" value="Search" class="btn btn-default"><i class="fa fa-search"></i></button>
                         </div>
                     </form>
+
+
                 </div>
                 <div class="col-md-4">
                     <a href="">
@@ -134,16 +127,9 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
                     </li>
                     <li>
                         <a href="page-post.php">Tin tức</a>
-<!--                        <ul class="sub-menu">-->
-<!--                            <li>-->
-<!--                                <a href="">-->
-<!--                                    Item1-->
-<!--                                </a>-->
-<!--                            </li>-->
-<!--                        </ul>-->
                     </li>
                     <li>
-                        <a href="">Liên hệ</a>
+                        <a href="contact.php">Liên hệ</a>
                     </li>
                 </ul>
                 <!-- end menu main-->
@@ -151,7 +137,7 @@ $CategoryProductHome = $db->fetchsql($sqlHomecate);
                 <!--Shopping-->
                 <ul class="pull-right" id="main-shopping">
                     <li>
-                        <a href=""><i class="fa fa-shopping-basket"></i> My Cart </a>
+                        <a href="gio-hang.php"><i class="fa fa-shopping-basket"></i> Giỏ hàng </a>
                     </li>
                 </ul>
                 <!--end Shopping-->

@@ -107,7 +107,19 @@
                 <span>Quản lý đơn hàng</span></a>
         </li>
 
-        <li class="nav-item <?php echo isset($open) && $open == 'transaction' ? 'active' : '' ?>">
+        <li class="nav-item <?php echo isset($open) && $open == 'comment' ? 'active' : '' ?>">
+            <a class="nav-link" href="<?php echo modules("comment") ?>">
+                <i class="fa fa-comment"></i>
+                <span>Bình luận</span></a>
+        </li>
+
+        <li class="nav-item <?php echo isset($open) && $open == 'contact' ? 'active' : '' ?>">
+            <a class="nav-link" href="<?php echo modules("contact") ?>">
+                <i class="fa fa-address-book"></i>
+                <span>Liên hệ</span></a>
+        </li>
+
+        <li class="nav-item">
             <a class="nav-link" href="/storemotor/dang-xuat.php">
                 <i class="fas fa-user-circle fa-fw"></i>
                 <span>Đăng xuất</span></a>

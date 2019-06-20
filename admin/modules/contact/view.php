@@ -1,14 +1,14 @@
 <?php
-$open = "user";
+$open = "contact";
 require_once __DIR__."/../../autoload/autoload.php";
 
 $id = intval(getInput('id'));
 
-$view_user = $db->fetchID('users', $id);
-if(empty($view_user))
+$view_contact = $db->fetchID('contact', $id);
+if(empty($view_contact))
 {
     $_SESSION['error'] = "Dữ liệu không tồn tại";
-    redirectAdmin("user");
+    redirectAdmin("contact");
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
@@ -18,6 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             "email" => postInput('email'),
             "address" => postInput('address'),
             "phone" => postInput('phone'),
+            "content" => postInput('content'),
             "created_at" => postInput('created_at')
         ];
 }
@@ -50,22 +51,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         <div class="info-user">
             <ul>
                 <li>
-                    <i class="fa fa-user"></i> Họ tên: <span><?php echo $view_user['name'] ?></span>
+                    <i class="fa fa-user"></i> Họ tên: <span><?php echo $view_contact['name'] ?></span>
                 </li>
                 <li>
-                    <i class="fa fa-envelope"></i> Email: <span><?php echo $view_user['email'] ?></span>
+                    <i class="fa fa-envelope"></i> Email: <span><?php echo $view_contact['email'] ?></span>
                 </li>
                 <li>
-                    <i class="fa fa-address-card"></i> Địa chỉ: <span><?php echo $view_user['address'] ?></span>
+                    <i class="fa fa-address-card"></i> Địa chỉ: <span><?php echo $view_contact['address'] ?></span>
                 </li>
                 <li>
-                    <i class="fa fa-phone"></i> Số điện thoại: <span><?php echo $view_user['phone'] ?></span>
+                    <i class="fa fa-phone"></i> Số điện thoại: <span><?php echo $view_contact['phone'] ?></span>
                 </li>
                 <li>
-                    <i class="fa fa-calendar"></i> Ngày đăng ký: <span><?php echo $view_user['created_at'] ?></span>
+                    <i class="fa fa-calendar"></i> Ngày liên hệ: <span><?php echo $view_contact['created_at'] ?></span>
+                </li>
+                <li>
+                    <i class="fa fa-calendar"></i> Nội dung: <span><?php echo $view_contact['content'] ?></span>
                 </li>
             </ul>
 
+        </div>
+
+        <div class="sent-email pull-left">
+            <a class="btn btn-danger" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" style="margin: 30px 0px; float: right;">Gửi Email Liên Hệ</a>
         </div>
     </div>
     <!--End.container-fluid-->

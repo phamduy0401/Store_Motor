@@ -21,14 +21,18 @@ $category = $db->fetchAll("category_product");
     <div class="row">
         <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-primary o-hidden h-100">
+                <?php
+                    $sql = "SELECT * FROM product";
+                    $total = count($db->fetchsql($sql));
+                ?>
                 <div class="card-body">
                     <div class="card-body-icon">
-                        <i class="fas fa-fw fa-comments"></i>
+                        <i class="fas fa-motorcycle"></i>
                     </div>
-                    <div class="mr-5">26 New Messages!</div>
+                    <div class="mr-5"><?php  echo $total; ?> Sản phẩm</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
-                    <span class="float-left">View Details</span>
+                <a class="card-footer text-white clearfix small z-1" href="<?php echo base_url() ?>admin/modules/product/">
+                    <span class="float-left">Chi tiết</span>
                     <span class="float-right">
           <i class="fas fa-angle-right"></i>
         </span>
@@ -37,14 +41,19 @@ $category = $db->fetchAll("category_product");
         </div>
         <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-warning o-hidden h-100">
+                <?php
+                $sql = "SELECT * FROM post";
+                $totalNew = count($db->fetchsql($sql));
+
+                ?>
                 <div class="card-body">
                     <div class="card-body-icon">
                         <i class="fas fa-fw fa-list"></i>
                     </div>
-                    <div class="mr-5">11 New Tasks!</div>
+                    <div class="mr-5"><?php echo $totalNew; ?> Bài viết</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
-                    <span class="float-left">View Details</span>
+                <a class="card-footer text-white clearfix small z-1" href="<?php echo base_url() ?>admin/modules/post/">
+                    <span class="float-left">Chi tiết</span>
                     <span class="float-right">
           <i class="fas fa-angle-right"></i>
         </span>
@@ -53,14 +62,19 @@ $category = $db->fetchAll("category_product");
         </div>
         <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-success o-hidden h-100">
+                <?php
+                $sql = "SELECT * FROM transaction";
+                $totalOrder = count($db->fetchsql($sql));
+
+                ?>
                 <div class="card-body">
                     <div class="card-body-icon">
                         <i class="fas fa-fw fa-shopping-cart"></i>
                     </div>
-                    <div class="mr-5">123 New Orders!</div>
+                    <div class="mr-5"><?php echo $totalOrder; ?> Đơn hàng</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
-                    <span class="float-left">View Details</span>
+                <a class="card-footer text-white clearfix small z-1" href="<?php echo base_url() ?>admin/modules/transaction/">
+                    <span class="float-left">Chi tiết</span>
                     <span class="float-right">
           <i class="fas fa-angle-right"></i>
         </span>
@@ -69,14 +83,61 @@ $category = $db->fetchAll("category_product");
         </div>
         <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-danger o-hidden h-100">
+                <?php
+                $sql = "SELECT * FROM users";
+                $totalUser = count($db->fetchsql($sql));
+
+                ?>
                 <div class="card-body">
                     <div class="card-body-icon">
                         <i class="fas fa-fw fa-life-ring"></i>
                     </div>
-                    <div class="mr-5">13 New Tickets!</div>
+                    <div class="mr-5"><?php echo $totalUser; ?> Tài khoản khách hàng</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
-                    <span class="float-left">View Details</span>
+                <a class="card-footer text-white clearfix small z-1" href="<?php echo base_url() ?>admin/modules/user/">
+                    <span class="float-left">Chi tiết</span>
+                    <span class="float-right">
+          <i class="fas fa-angle-right"></i>
+        </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-secondary o-hidden h-100">
+                <?php
+                $sql = "SELECT * FROM comment";
+                $totalComment = count($db->fetchsql($sql));
+                ?>
+                <div class="card-body">
+                    <div class="card-body-icon">
+                        <i class="fas fa-fw fa-comments"></i>
+                    </div>
+                    <div class="mr-5"><?php  echo $totalComment; ?> Bình luận</div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" href="<?php echo base_url() ?>admin/modules/comment/">
+                    <span class="float-left">Chi tiết</span>
+                    <span class="float-right">
+          <i class="fas fa-angle-right"></i>
+        </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-danger o-hidden h-100">
+                <?php
+                $sql = "SELECT * FROM contact";
+                $totalContact = count($db->fetchsql($sql));
+                ?>
+                <div class="card-body">
+                    <div class="card-body-icon">
+                        <i class="fas fa-address-book"></i>
+                    </div>
+                    <div class="mr-5"><?php  echo $totalContact; ?> Liên hệ</div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" href="<?php echo base_url() ?>admin/modules/contact/">
+                    <span class="float-left">Chi tiết</span>
                     <span class="float-right">
           <i class="fas fa-angle-right"></i>
         </span>
@@ -85,16 +146,7 @@ $category = $db->fetchAll("category_product");
         </div>
     </div>
 
-    <!-- Area Chart Example-->
-    <div class="card mb-3">
-        <div class="card-header">
-            <i class="fas fa-chart-area"></i>
-            Area Chart Example</div>
-        <div class="card-body">
-            <canvas id="myAreaChart" width="100%" height="30"></canvas>
-        </div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-    </div>
+
 </div>
 <!-- /.container-fluid -->
 <?php require_once __DIR__."/layouts/footer.php"; ?>

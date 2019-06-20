@@ -11,9 +11,9 @@
                             <ul>
                                 <li>
 
-                                    <p><i class="fa fa-home" style="font-size: 16px;padding-right: 5px;"></i> Ngách 56/34 số nhà 22 phường đức thắng </p>
-                                    <p><i class="sp-ic fa fa-mobile" style="font-size: 22px;padding-right: 5px;"></i> 012345678</p>
-                                    <p><i class="sp-ic fa fa-envelope" style="font-size: 13px;padding-right: 5px;"></i> support@gmail.com</p>
+                                    <p><i class="fa fa-home" style="font-size: 16px;padding-right: 5px;"></i> Phường Đồng Nguyên - T.X Từ Sơn - Bắc Ninh </p>
+                                    <p><i class="sp-ic fa fa-mobile" style="font-size: 22px;padding-right: 5px;"></i> 0336636255</p>
+                                    <p><i class="sp-ic fa fa-envelope" style="font-size: 13px;padding-right: 5px;"></i> tienit04021997@gmail.com</p>
                                 </li>
                             </ul>
                         </div>

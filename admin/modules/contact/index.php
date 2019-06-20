@@ -1,13 +1,13 @@
 <?php
-$open = "user";
+$open = "contact";
 require_once __DIR__."/../../autoload/autoload.php";
 
 //$user = $db->fetchAll("users");
 //
 //$sql = "SELECT users.* FROM users ORDER BY ID DESC ";
-$sql = "SELECT * FROM users ORDER BY id DESC";
+$sql = "SELECT * FROM contact ORDER BY id DESC";
 //$product = $db->fetchAll("product");
-$user = $db->fetchsql($sql);
+$contact = $db->fetchsql($sql);
 ?>
 <?php require_once __DIR__."/../../layouts/header.php"; ?>
 
@@ -43,18 +43,22 @@ $user = $db->fetchsql($sql);
                                 <th>Tên khách hàng</th>
                                 <th>Số điện thoại</th>
                                 <th>Email</th>
-                                <th>Địa chỉ</th>
+                                <th>Xử lý</th>
                                 <th>Trạng thái</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <?php $stt = 1; foreach ($user as $item): ?>
+                            <?php $stt = 1; foreach ($contact as $item): ?>
                                 <tr>
                                     <td><?php echo $stt ?></td>
                                     <td><?php echo $item['name'] ?></td>
                                     <td><?php echo $item['phone'] ?></td>
                                     <td><?php echo $item['email'] ?></td>
-                                    <td><?php echo $item['address'] ?></td>
+                                    <td>
+                                        <a class="btn btn-xs <?php echo $item['home'] == 0 ? 'btn-danger' : 'btn-success' ?>" href="status.php?id=<?php echo $item['id'] ?>">
+                                            <?php echo $item['home'] == 0 ? 'Chưa xử lý' : 'Đã xử lý' ?>
+                                        </a>
+                                    </td>
                                     <td>
                                         <ul class="list-action">
                                             <li class="item-edit">
@@ -63,7 +67,7 @@ $user = $db->fetchsql($sql);
                                                 </a>
                                             </li>
                                             <li class="item-delete">
-                                                <a href="delete.php?id=<?php echo $item['id'] ?>" title="Xóa danh mục">
+                                                <a href="delete.php?id=<?php echo $item['id'] ?>" title="Xóa">
                                                     <i class="fa fa-trash-alt"></i>
                                                 </a>
                                             </li>

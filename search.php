@@ -9,7 +9,7 @@ $EditCategoryProduct = $db->fetchID("product", $id);
 if (isset($_REQUEST['btnsearch']))
 {
     // Gán hàm addslashes để chống sql injection
-    $search = addcslashes($_GET['search']);
+    $search = addcslashes($_GET['search'], " \t\n\r\0\x0B");
     // Nếu $search rỗng thì báo lỗi, tức là người dùng chưa nhập liệu mà đã nhấn submit.
     if (empty($search)){
         echo "Yêu cầu nhập dữ liệu vào ô trống";
@@ -17,9 +17,11 @@ if (isset($_REQUEST['btnsearch']))
     else
     {
         //Dùng câu lênh like trong sql và sứ dụng toán tử % của php để tìm kiếm dữ liệu chính xác hơn.
-        $query = "SELECT * FROM product where name like '%$search%'";
+        $query = "SELECT * FROM product WHERE name LIKE '%{$search}%'";
         // Thực thi câu truy vấn
-        $sql = mysqli_query($query);
+        $arr_result = $db->fetchsql($query);
+
+//        _debug($arr_result);
     }
 }
 
@@ -42,7 +44,8 @@ if (isset($_REQUEST['btnsearch']))
             </div>
         </div>
         <div class="product-search">
-            <?php while ($row = mysqli_fetch_assoc($sql)):  ?>
+            <?php foreach($arr_result as $row ):  ?>
+
                 <div class="col-md-3 col-xs-12 item-product">
                     <div class="item-product-custom border bor">
                         <a href="product-detail.php?id=<?php echo $row['id'] ?>">
@@ -50,13 +53,13 @@ if (isset($_REQUEST['btnsearch']))
                         </a>
                         <div class="info-item">
                             <h1 class="info-product-item">
-                                <a href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $item['name'] ?></a>
+                                <a href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
                             </h1>
 
-                            <?php if ($item['sale'] > 0): ?>
+                            <?php if ($row['sale'] > 0): ?>
                                 <p><strike class="sale"><?php echo formatPrice($row['price']) ?></strike>
                                     <br>
-                                    <b class="price"><?php echo formatpricesale($row['price'],$item['sale']) ?></b></p>
+                                    <b class="price"><?php echo formatpricesale($row['price'],$row['sale']) ?></b></p>
                             <?php else: ?>
                                 <p><b style="color: #ea3a3c;"><?php echo formatPrice($row['price']) ?></b></p>
                             <?php endif;  ?>
@@ -69,7 +72,7 @@ if (isset($_REQUEST['btnsearch']))
                         </div>
                     </div>
                 </div>
-            <?php endwhile; ?>
+            <?php endforeach; ?>
 
         </div>
 

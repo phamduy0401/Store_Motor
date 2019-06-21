@@ -505,6 +505,9 @@ body{
     border-bottom: 1px dashed #eee;
     padding-bottom: 15px;
 }
+.contact-google-map{
+    margin: 40px 0px;
+}
 @media(min-width: 992px) {
     .logo-img{
         width: 250px;

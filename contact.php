@@ -90,45 +90,59 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         <div class="frm-contact">
 
             <form action="" method="POST">
-                <div class="form-group">
-                    <label for="email">Họ tên:</label>
-                    <input type="text" name="name" class="form-control" id="email">
-                    <?php if (isset($error['name'])): ?>
-                        <p class="text-danger">
-                            <?php echo $error['name'] ?>
-                        </p>
-                    <?php endif ?>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="email">Họ tên:</label>
+                            <input type="text" name="name" class="form-control" id="email">
+                            <?php if (isset($error['name'])): ?>
+                                <p class="text-danger">
+                                    <?php echo $error['name'] ?>
+                                </p>
+                            <?php endif ?>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="email">Số điện thoại:</label>
+                            <input type="number" name="phone" class="form-control" id="email">
+                            <?php if (isset($error['phone'])): ?>
+                                <p class="text-danger">
+                                    <?php echo $error['phone'] ?>
+                                </p>
+                            <?php endif ?>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Số điện thoại:</label>
-                    <input type="number" name="phone" class="form-control" id="email">
-                    <?php if (isset($error['phone'])): ?>
-                        <p class="text-danger">
-                            <?php echo $error['phone'] ?>
-                        </p>
-                    <?php endif ?>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" class="form-control" id="email">
-                    <?php if (isset($error['email'])): ?>
-                        <p class="text-danger">
-                            <?php echo $error['email'] ?>
-                        </p>
-                    <?php endif ?>
-                </div>
-                <div class="form-group">
-                    <label for="email">Địa chỉ:</label>
-                    <input type="text" name="address" class="form-control" id="email">
-                    <?php if (isset($error['address'])): ?>
-                        <p class="text-danger">
-                            <?php echo $error['address'] ?>
-                        </p>
-                    <?php endif ?>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" class="form-control" id="email">
+                            <?php if (isset($error['email'])): ?>
+                                <p class="text-danger">
+                                    <?php echo $error['email'] ?>
+                                </p>
+                            <?php endif ?>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="email">Địa chỉ:</label>
+                            <input type="text" name="address" class="form-control" id="email">
+                            <?php if (isset($error['address'])): ?>
+                                <p class="text-danger">
+                                    <?php echo $error['address'] ?>
+                                </p>
+                            <?php endif ?>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="email">Nội dung:</label>
-                    <textarea type="text" name="content" class="form-control" rows="4"></textarea>
+                    <textarea type="text" name="content" class="form-control" rows="6"></textarea>
                     <?php if (isset($error['content'])): ?>
                         <p class="text-danger">
                             <?php echo $error['content'] ?>
@@ -139,6 +153,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
                 <button type="submit" class="btn btn-success">Gửi liên hệ</button>
             </form>
+        </div>
+
+        <div class="contact-google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59546.700201149346!2d105.974015!3d21.125768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc33b2a062467a9c2!2sHEAD+honda+Cao+S%C6%A1n!5e0!3m2!1sen!2sus!4v1561082715456!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
         <!-- Nội dung -->

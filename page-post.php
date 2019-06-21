@@ -63,7 +63,7 @@ $path = $_SERVER['SCRIPT_NAME'];
                                     </h3>
                                     <div class="post-des post-des-cate"><?php echo $item['short_description'] ?></div>
                                     <div class="readMore">
-                                        <a href="">Xem thêm</a>
+                                        <a href="post-detail.php?id=<?php echo $item['id'] ?>">Xem thêm</a>
                                     </div>
                                 </div>
                             </div>

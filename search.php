@@ -31,50 +31,53 @@ if (isset($_REQUEST['btnsearch']))
 <div class="col-md-9 bor">
 
     <section class="box-main1">
-        <div class="product-title">
-            <h2>
-                <a href="#">
-                    Tìm kiếm sản phẩm
-                </a>
-            </h2>
-            <div class="title_hr_office">
-                <div class="title_hr_icon">
-                    <i class="fa fa-users" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-        <div class="product-search">
-            <?php foreach($arr_result as $row ):  ?>
-
-                <div class="col-md-3 col-xs-12 item-product">
-                    <div class="item-product-custom border bor">
-                        <a href="product-detail.php?id=<?php echo $row['id'] ?>">
-                            <img src="<?php echo uploads() ?>/product/<?php echo $row['thumbar'] ?>" class="" width="100%" height="180">
-                        </a>
-                        <div class="info-item">
-                            <h1 class="info-product-item">
-                                <a href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
-                            </h1>
-
-                            <?php if ($row['sale'] > 0): ?>
-                                <p><strike class="sale"><?php echo formatPrice($row['price']) ?></strike>
-                                    <br>
-                                    <b class="price"><?php echo formatpricesale($row['price'],$row['sale']) ?></b></p>
-                            <?php else: ?>
-                                <p><b style="color: #ea3a3c;"><?php echo formatPrice($row['price']) ?></b></p>
-                            <?php endif;  ?>
-
-                        </div>
-                        <div class="hidenitem">
-                            <p><a href="product-detail.php?id=<?php echo $row['id'] ?>"><i class="fa fa-search"></i></a></p>
-                            <p><a href=""><i class="fa fa-heart"></i></a></p>
-                            <p><a href="addcart.php?id=<?php echo $row['id'] ?>"><i class="fa fa-shopping-basket"></i></a></p>
-                        </div>
+        <div class="product-show">
+            <div class="product-title">
+                <h2>
+                    <a href="#">
+                        Tìm kiếm sản phẩm
+                    </a>
+                </h2>
+                <div class="title_hr_office">
+                    <div class="title_hr_icon">
+                        <i class="fa fa-users" aria-hidden="true"></i>
                     </div>
                 </div>
-            <?php endforeach; ?>
+            </div>
+            <div class="product-search showitem">
+                <?php foreach($arr_result as $row ):  ?>
 
+                    <div class="col-md-3 col-xs-12 item-product">
+                        <div class="item-product-custom border bor">
+                            <a href="product-detail.php?id=<?php echo $row['id'] ?>">
+                                <img src="<?php echo uploads() ?>/product/<?php echo $row['thumbar'] ?>" class="" width="100%" height="180">
+                            </a>
+                            <div class="info-item">
+                                <h1 class="info-product-item">
+                                    <a href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
+                                </h1>
+
+                                <?php if ($row['sale'] > 0): ?>
+                                    <p><strike class="sale"><?php echo formatPrice($row['price']) ?></strike>
+                                        <br>
+                                        <b class="price"><?php echo formatpricesale($row['price'],$row['sale']) ?></b></p>
+                                <?php else: ?>
+                                    <p><b style="color: #ea3a3c;"><?php echo formatPrice($row['price']) ?></b></p>
+                                <?php endif;  ?>
+
+                            </div>
+                            <div class="hidenitem">
+                                <p><a href="product-detail.php?id=<?php echo $row['id'] ?>"><i class="fa fa-search"></i></a></p>
+                                <p><a href=""><i class="fa fa-heart"></i></a></p>
+                                <p><a href="addcart.php?id=<?php echo $row['id'] ?>"><i class="fa fa-shopping-basket"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+
+            </div>
         </div>
+
 
         <!-- Nội dung -->
     </section>

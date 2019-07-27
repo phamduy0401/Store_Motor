@@ -180,7 +180,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
                                 <div class="form-group">
                                     <label for="exampleInputCategory">Giá sản phẩm (VNĐ)</label>
-                                    <input type="number" class="form-control" id="exampleInputCategory" name="price" placeholder="10000000 VNĐ">
+                                    <input type="number" class="form-control" id="exampleInputCategory" name="price" placeholder="10000000 VNĐ" min="0">
                                     <?php if (isset($error['price'])): ?>
                                         <p class="text-danger">
                                             <?php echo $error['price'] ?>
@@ -190,12 +190,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
                                 <div class="form-group">
                                     <label for="exampleInputCategory">Giảm giá (%)</label>
-                                    <input type="number" class="form-control" id="exampleInputCategory" name="sale" placeholder="10%" value="0">
+                                    <input type="number" class="form-control" id="exampleInputCategory" name="sale" placeholder="10%" value="0" min="0">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="exampleInputCategory">Số lượng sản phẩm</label>
-                                    <input type="number" class="form-control" id="exampleInputCategory" name="number" placeholder="100">
+                                    <input type="number" class="form-control" id="exampleInputCategory" name="number" placeholder="100" min="0">
                                     <?php if (isset($error['number'])): ?>
                                         <p class="text-danger">
                                             <?php echo $error['number'] ?>

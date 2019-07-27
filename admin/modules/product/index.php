@@ -79,7 +79,7 @@ $product = $db->fetchsql($sql);
                                     </td>
                                     <td>
                                         <ul style="margin: 0; padding: 0;">
-                                            <li>Giá: <?php echo $item['price'] ?> VNĐ</li>
+                                            <li>Giá: <?php echo formatPrice($item['price']) ?> VNĐ</li>
                                             <li>Số lượng: <?php echo $item['number'] ?> xe</li>
                                         </ul>
                                     </td>

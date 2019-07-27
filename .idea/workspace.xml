@@ -2,7 +2,168 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2064167-da8e-45f7-b976-fa9b03842d7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/COMMITMENT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/get_oauth_token.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/guide.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-af.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-am.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-az.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ba.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-be.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-bg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ca.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-cs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-da.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-de.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-el.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-eo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-es.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-et.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-fa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-fi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-fo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-fr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-gl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-he.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-hi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-hr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-hu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-it.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ja.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ka.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ko.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-lt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-lv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-mg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ms.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-nb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-nl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-pl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-pt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-pt_br.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ro.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ru.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-sk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-sl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-sr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-sv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-tl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-tr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-uk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-vi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-zh.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-zh_cn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/mailerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/src/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/src/OAuth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/src/PHPMailer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/src/POP3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/src/SMTP.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/RELEASE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/example/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/phpcompatinfo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/resources/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/resources/debian/changelog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/resources/debian/compat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/resources/debian/control" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/resources/debian/copyright" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/resources/debian/rules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/resources/debian/source/format" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/resources/etc/php-tecnickcom-tc-lib-pdf/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/resources/rpm/rpm.spec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/src/ClassObjects.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/src/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/src/MetaInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/src/Output.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/src/Tcpdf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/src/include/sRGB.icc.z" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/library/test/TcpdfTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/modules/transaction/print.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/modules/transaction/report.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/CHANGELOG.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/config/tcpdf_config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_1d_html.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_1d_png.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_1d_svg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_1d_svgi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_datamatrix_html.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_datamatrix_png.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_datamatrix_svg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_datamatrix_svgi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_pdf417_html.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_pdf417_png.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_pdf417_svg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_pdf417_svgi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_qrcode_html.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_qrcode_png.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_qrcode_svg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_qrcode_svgi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/tcpdf_barcodes_1d_include.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/tcpdf_barcodes_2d_include.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/config/tcpdf_config_alt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/cert/tcpdf.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/cert/tcpdf.fdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/cert/tcpdf.p12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/chapter_demo_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/chapter_demo_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/table_data_demo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/utf8test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_001.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_002.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_003.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_004.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_005.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_006.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_007.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_008.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_009.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_010.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_011.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_012.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_012.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_013.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_014.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_015.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_016.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_017.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_018.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_019.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_020.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_021.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_022.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_023.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_024.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_025.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_026.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/layouts/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layouts/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layouts/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/product/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/modules/product/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/product/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/modules/product/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/product/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/modules/product/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/transaction/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/modules/transaction/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/transaction/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/modules/transaction/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dang-nhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/dang-nhap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/css/style-admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/css/style-admin.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,28 +174,83 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+        <entry file="file://$PROJECT_DIR$/admin/modules/product/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3689">
-              <caret line="217" column="93" selection-start-line="217" selection-start-column="49" selection-end-line="217" selection-end-column="93" />
+            <state relative-caret-position="102">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page-post.php">
+        <entry file="file://$PROJECT_DIR$/admin/layouts/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" column="93" selection-start-line="65" selection-start-column="93" selection-end-line="65" selection-end-column="93" />
+            <state relative-caret-position="1394">
+              <caret line="82" column="9" selection-start-line="62" selection-end-line="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logout.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dang-nhap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1377">
+              <caret line="81" column="58" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/modules/product/add.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3349">
+              <caret line="197" column="143" selection-start-line="197" selection-start-column="143" selection-end-line="197" selection-end-column="143" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/modules/transaction/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2040">
+              <caret line="120" column="76" selection-start-line="120" selection-start-column="76" selection-end-line="120" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/category-post.php">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="65" column="93" selection-start-line="65" selection-start-column="93" selection-end-line="65" selection-end-column="93" />
+            <state relative-caret-position="272">
+              <caret line="116" column="82" selection-start-line="116" selection-start-column="71" selection-end-line="116" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/layouts/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/library/example/index.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/admin/css/style-admin.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1734">
+              <caret line="102" column="1" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -79,15 +295,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/frontend/css/style.css" />
-        <option value="$PROJECT_DIR$/admin/modules/admin/add.php" />
-        <option value="$PROJECT_DIR$/admin/modules/categoryPost/add.php" />
-        <option value="$PROJECT_DIR$/dang-nhap.php" />
-        <option value="$PROJECT_DIR$/main.php" />
-        <option value="$PROJECT_DIR$/logout.php" />
-        <option value="$PROJECT_DIR$/dang-ky.php" />
-        <option value="$PROJECT_DIR$/admin/modules/user/delete.php" />
-        <option value="$PROJECT_DIR$/admin/modules/admin/index.php" />
         <option value="$PROJECT_DIR$/admin/modules/categoryPost/edit.php" />
         <option value="$PROJECT_DIR$/addcart.php" />
         <option value="$PROJECT_DIR$/page-product.php" />
@@ -99,27 +306,19 @@
         <option value="$PROJECT_DIR$/remove.php" />
         <option value="$PROJECT_DIR$/gio-hang.php" />
         <option value="$PROJECT_DIR$/cap-nhat-gio-hang.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/admin/autoload/autoload.php" />
         <option value="$PROJECT_DIR$/login/index.php" />
         <option value="$PROJECT_DIR$/dang-xuat.php" />
         <option value="$PROJECT_DIR$/admin/modules/user/view.php" />
-        <option value="$PROJECT_DIR$/public/admin/css/style-admin.css" />
         <option value="$PROJECT_DIR$/admin/modules/comment/view.php" />
         <option value="$PROJECT_DIR$/admin/modules/comment/delete.php" />
         <option value="$PROJECT_DIR$/admin/modules/comment/home.php" />
         <option value="$PROJECT_DIR$/admin/modules/comment/index.php" />
         <option value="$PROJECT_DIR$/product-detail.php" />
-        <option value="$PROJECT_DIR$/layouts/footer.php" />
-        <option value="$PROJECT_DIR$/admin/modules/product/index.php" />
         <option value="$PROJECT_DIR$/admin/modules/post/index.php" />
         <option value="$PROJECT_DIR$/autoload/autoload.php" />
-        <option value="$PROJECT_DIR$/layouts/header.php" />
-        <option value="$PROJECT_DIR$/admin/modules/transaction/view.php" />
-        <option value="$PROJECT_DIR$/admin/modules/transaction/index.php" />
         <option value="$PROJECT_DIR$/admin/modules/user/index.php" />
         <option value="$PROJECT_DIR$/admin/modules/transaction/delete.php" />
-        <option value="$PROJECT_DIR$/admin/layouts/header.php" />
         <option value="$PROJECT_DIR$/admin/modules/contact/index.php" />
         <option value="$PROJECT_DIR$/admin/modules/contact/view.php" />
         <option value="$PROJECT_DIR$/admin/modules/contact/delete.php" />
@@ -130,12 +329,30 @@
         <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/page-post.php" />
         <option value="$PROJECT_DIR$/category-post.php" />
+        <option value="$PROJECT_DIR$/admin/PHPMailer-master/src/POP3.php" />
+        <option value="$PROJECT_DIR$/admin/PHPMailer-master/mailerController.php" />
+        <option value="$PROJECT_DIR$/admin/PHPMailer-master/guide.txt" />
+        <option value="$PROJECT_DIR$/layouts/footer.php" />
+        <option value="$PROJECT_DIR$/layouts/header.php" />
+        <option value="$PROJECT_DIR$/admin/modules/transaction/report.php" />
+        <option value="$PROJECT_DIR$/public/admin/css/style-admin.css" />
+        <option value="$PROJECT_DIR$/admin/modules/transaction/index.php" />
+        <option value="$PROJECT_DIR$/admin/layouts/footer.php" />
+        <option value="$PROJECT_DIR$/admin/modules/transaction/view.php" />
+        <option value="$PROJECT_DIR$/admin/modules/product/add.php" />
+        <option value="$PROJECT_DIR$/admin/modules/product/index.php" />
+        <option value="$PROJECT_DIR$/admin/layouts/header.php" />
+        <option value="$PROJECT_DIR$/admin/modules/transaction/print.php" />
+        <option value="$PROJECT_DIR$/admin/modules/product/home.php" />
+        <option value="$PROJECT_DIR$/dang-nhap.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="8" />
-    <option name="width" value="683" />
+    <option name="x" value="436" />
+    <option name="y" value="116" />
+    <option name="width" value="455" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectView">
@@ -143,6 +360,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,6 +383,12 @@
               <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
               <item name="storemotor" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -179,12 +403,27 @@
               <item name="storemotor" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
               <item name="storemotor" type="462c0819:PsiDirectoryNode" />
-              <item name="autoload" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="PHPMailer-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="PHPMailer-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
@@ -219,24 +458,10 @@
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,6 +477,7 @@
       <recent name="C:\xampp\htdocs\storemotor\admin\modules\categoryProduct" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\storemotor\admin" />
       <recent name="C:\xampp\htdocs\storemotor\public\frontend\images" />
       <recent name="C:\xampp\htdocs\storemotor\public\uploads\logo" />
       <recent name="C:\xampp\htdocs\storemotor\public\uploads\slider" />
@@ -319,16 +545,39 @@
       <workItem from="1561083351243" duration="252000" />
       <workItem from="1561104555176" duration="268000" />
       <workItem from="1561114947181" duration="661000" />
+      <workItem from="1561125954274" duration="16000" />
+      <workItem from="1561130836436" duration="2897000" />
+      <workItem from="1561299352312" duration="3784000" />
+      <workItem from="1561337313052" duration="2087000" />
+      <workItem from="1561381251727" duration="2399000" />
+      <workItem from="1561422941859" duration="1763000" />
+      <workItem from="1561471287042" duration="2922000" />
+      <workItem from="1561547469055" duration="955000" />
+      <workItem from="1561557809259" duration="5000" />
+      <workItem from="1561609136751" duration="445000" />
+      <workItem from="1561640771114" duration="7019000" />
+      <workItem from="1561652939475" duration="2000" />
+      <workItem from="1561683528220" duration="2866000" />
+      <workItem from="1561825652310" duration="610000" />
+      <workItem from="1562073589498" duration="699000" />
+      <workItem from="1562209904847" duration="1600000" />
+      <workItem from="1562253619366" duration="59000" />
+      <workItem from="1562291633541" duration="1198000" />
+      <workItem from="1562334067584" duration="715000" />
+      <workItem from="1562683099211" duration="272000" />
+      <workItem from="1562691879762" duration="4000" />
+      <workItem from="1562740355198" duration="1837000" />
+      <workItem from="1562756867945" duration="93000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219621000" />
+    <option name="totallyTimeSpent" value="253868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34568834" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25037822" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -353,149 +602,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dang-nhap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="43" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dang-xuat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/autoload/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gio-hang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-896">
-          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/category-product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin/css/main.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin/css/style-admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/comment/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/comment/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="56" column="106" selection-start-line="56" selection-start-column="106" selection-end-line="56" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/categoryPost/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/categoryPost/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="41" selection-start-line="58" selection-start-column="36" selection-end-line="62" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/comment/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/comment/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layouts/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="144" selection-start-line="15" selection-start-column="144" selection-end-line="15" selection-end-column="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/post/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/post/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autoload/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layouts/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="131" column="44" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/modules/categoryPost/add.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -522,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/product/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="131" column="50" lean-forward="true" selection-start-line="127" selection-start-column="36" selection-end-line="131" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product-detail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -536,38 +635,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/product/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="29" lean-forward="true" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/modules/user/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="43" column="54" lean-forward="true" selection-end-line="85" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/transaction/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="75" column="45" lean-forward="true" selection-start-line="71" selection-start-column="40" selection-end-line="75" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/layouts/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="118" column="29" selection-start-line="118" selection-start-column="29" selection-end-line="118" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/transaction/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="127" column="18" lean-forward="true" selection-start-line="125" selection-start-column="12" selection-end-line="127" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -589,13 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/product/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="29" lean-forward="true" selection-end-line="33" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -624,13 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="35" column="40" lean-forward="true" selection-end-line="73" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/product/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -686,10 +743,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://E:/Dowload/tc-lib-pdf-develop/tc-lib-pdf-develop/example/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/Dowload/tc-lib-pdf-develop/tc-lib-pdf-develop/test/TcpdfTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3689">
-          <caret line="217" column="93" selection-start-line="217" selection-start-column="49" selection-end-line="217" selection-end-column="93" />
+        <state relative-caret-position="-100" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/category-post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -700,10 +765,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/category-post.php">
+    <entry file="file://$PROJECT_DIR$/admin/modules/categoryProduct/add.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addcart.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="65" column="93" selection-start-line="65" selection-start-column="93" selection-end-line="65" selection-end-column="93" />
+        <state relative-caret-position="969">
+          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dang-ky.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="162" column="52" selection-start-line="162" selection-start-column="52" selection-end-line="162" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/PHPMailer-master/src/POP3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="30" column="100" selection-start-line="30" selection-start-column="100" selection-end-line="30" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/transaction/report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tcpdf/fonts/times.php" />
+    <entry file="file://$PROJECT_DIR$/admin/PHPMailer-master/src/SMTP.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/PHPMailer-master/mailerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/PHPMailer-master/src/PHPMailer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="117" column="41" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/PHPMailer-master/guide.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/product/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="91" selection-start-line="81" selection-start-column="91" selection-end-line="81" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gio-hang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="133" selection-start-line="60" selection-start-column="126" selection-end-line="60" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/transaction/print.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/transaction/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/product/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/product/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/layouts/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" column="9" selection-start-line="62" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logout.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dang-nhap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="58" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/product/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3349">
+          <caret line="197" column="143" selection-start-line="197" selection-start-column="143" selection-end-line="197" selection-end-column="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/transaction/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="120" column="76" selection-start-line="120" selection-start-column="76" selection-end-line="120" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/layouts/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/library/example/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/css/style-admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="1" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="116" column="82" selection-start-line="116" selection-start-column="71" selection-end-line="116" selection-end-column="82" />
         </state>
       </provider>
     </entry>

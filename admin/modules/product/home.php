@@ -4,7 +4,7 @@ require_once __DIR__."/../../autoload/autoload.php";
 
 /*
  * Lấy danh sách danh mục sản phẩm
- */
+   */
 $id = intval(getInput('id'));
 //_debug($id);
 

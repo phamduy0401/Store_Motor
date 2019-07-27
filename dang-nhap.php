@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 <form action="" method="POST" class="form-horizontal" role="form">
                     <div class="form-group">
                         <label for="name">Email</label>
-                        <input type="text" name="email" class="form-control" id="exampleInputEmail" placeholder="Nhập email">
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail" placeholder="Nhập email">
                         <?php if (isset($error['email'])): ?>
                             <p class="text-danger" style="margin-top: 5px;">
                                 <?php echo $error['email'] ?>

@@ -1,6 +1,7 @@
 <?php
 $open = "transaction";
 require_once __DIR__."/../../autoload/autoload.php";
+require_once __DIR__."/../../PHPMailer-master/mailerController.php";
 
 
 $id = intval(getInput('id'));
@@ -10,6 +11,8 @@ $view_user = $db->fetchID('users', $view_transaction['users_id']);
 
 //_debug($view_user);
 $orders = $db->fetchsql("SELECT * FROM orders WHERE transaction_id = ".$view_transaction['id']);
+
+
 
 if(empty($view_transaction))
 {
@@ -109,13 +112,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                                     <td><?php echo $key+1; ?></td>
                                     <td><?php echo $product[0]['name']; ?></td>
                                     <td><?php echo $order['qty']; ?></td>
-                                    <td><?php echo $order['price']; ?></td>
+                                    <td><?php echo formatPrice($order['price'] * $order['qty']); ?></td>
                                 </tr>
                                 <?php endforeach; ?>
 
                                 <tr>
                                     <td class="text-right" colspan="3">Tổng tiền:</td>
-                                    <td><?php echo $total_price; ?></td>
+                                    <td><?php echo formatPrice($total_price); ?></td>
                                 </tr>
                             </tbody>
                         </table>

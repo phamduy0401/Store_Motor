@@ -82,6 +82,11 @@ $transaction = $db->fetchsql($sql);
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                             </li>
+                                            <li class="item-print">
+                                                <a target="_blank" href="print.php?id=<?php echo $item['id'] ?>" title="In hóa đơn">
+                                                    <i class="fa fa-print"></i>
+                                                </a>
+                                            </li>
                                             <li class="item-delete">
                                                 <a href="delete.php?id=<?php echo $item['id'] ?>" title="Xóa danh mục">
                                                     <i class="fa fa-trash-alt"></i>

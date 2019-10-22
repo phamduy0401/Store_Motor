@@ -1,4 +1,4 @@
-- Public: thư mục này chứa các file css, js, images, upload của cả backend và frontend
+﻿- Public: thư mục này chứa các file css, js, images, upload của cả backend và frontend
     -- admin: thư mục này chứa các file bên admin
     -- frontend là thư mục chứa các file giao diện
 
@@ -13,3 +13,12 @@
 - Thư mục libraries: thư mục này sẽ tạo các file xử lý như:
     + Function
     + Database
+
+- http://localhost/storemotor/
+- http://localhost/storemotor/admin/
+
+https://w3layouts.com/
+
+https://www.youtube.com/watch?v=50KWAQbinCQ&list=PLybp0rGPozcfYTYdNaoot2_hgus8jITL9
+
+ tienit04021997@gmail.com - tien1997

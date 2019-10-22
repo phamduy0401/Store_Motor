@@ -2,168 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2064167-da8e-45f7-b976-fa9b03842d7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/COMMITMENT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/SECURITY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/VERSION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/get_oauth_token.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/guide.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-af.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-am.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-az.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ba.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-be.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-bg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ca.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-cs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-da.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-de.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-el.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-eo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-es.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-et.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-fa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-fi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-fo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-fr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-gl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-he.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-hi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-hr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-hu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-it.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ja.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ka.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ko.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-lt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-lv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-mg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ms.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-nb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-nl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-pl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-pt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-pt_br.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ro.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-ru.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-sk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-sl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-sr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-sv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-tl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-tr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-uk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-vi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-zh.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/language/phpmailer.lang-zh_cn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/mailerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/src/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/src/OAuth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/src/PHPMailer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/src/POP3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/PHPMailer-master/src/SMTP.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/RELEASE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/VERSION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/example/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/phpcompatinfo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/resources/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/resources/debian/changelog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/resources/debian/compat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/resources/debian/control" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/resources/debian/copyright" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/resources/debian/rules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/resources/debian/source/format" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/resources/etc/php-tecnickcom-tc-lib-pdf/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/resources/rpm/rpm.spec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/src/ClassObjects.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/src/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/src/MetaInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/src/Output.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/src/Tcpdf.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/src/include/sRGB.icc.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/library/test/TcpdfTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/modules/transaction/print.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/modules/transaction/report.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/CHANGELOG.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/LICENSE.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/config/tcpdf_config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_1d_html.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_1d_png.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_1d_svg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_1d_svgi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_datamatrix_html.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_datamatrix_png.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_datamatrix_svg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_datamatrix_svgi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_pdf417_html.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_pdf417_png.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_pdf417_svg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_pdf417_svgi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_qrcode_html.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_qrcode_png.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_qrcode_svg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/example_2d_qrcode_svgi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/tcpdf_barcodes_1d_include.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/barcodes/tcpdf_barcodes_2d_include.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/config/tcpdf_config_alt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/cert/tcpdf.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/cert/tcpdf.fdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/cert/tcpdf.p12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/chapter_demo_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/chapter_demo_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/table_data_demo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/data/utf8test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_001.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_002.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_003.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_004.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_005.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_006.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_007.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_008.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_009.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_010.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_011.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_012.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_012.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_013.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_014.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_015.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_016.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_017.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_018.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_019.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_020.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_021.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_022.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_023.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_024.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_025.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/tcpdf/examples/example_026.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/layouts/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layouts/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layouts/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/modules/product/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/modules/product/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/modules/product/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/modules/product/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/modules/product/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/modules/product/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/modules/transaction/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/modules/transaction/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/modules/transaction/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/modules/transaction/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dang-nhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/dang-nhap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/css/style-admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/css/style-admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document.txt" beforeDir="false" afterPath="$PROJECT_DIR$/document.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -173,15 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/modules/product/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/layouts/footer.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -223,13 +54,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="1241">
               <caret line="116" column="82" selection-start-line="116" selection-start-column="71" selection-end-line="116" selection-end-column="82" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/modules/categoryPost/home.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -360,7 +196,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -397,6 +232,20 @@
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="categoryPost" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="storemotor" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="post" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="storemotor" type="b2602c69:ProjectViewProjectNode" />
@@ -462,11 +311,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TienTM_github" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../store-laravel" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -568,16 +418,17 @@
       <workItem from="1562691879762" duration="4000" />
       <workItem from="1562740355198" duration="1837000" />
       <workItem from="1562756867945" duration="93000" />
+      <workItem from="1571750829056" duration="641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253868000" />
+    <option name="totallyTimeSpent" value="254509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25037822" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25416037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -602,13 +453,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/modules/categoryPost/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="13" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/partials/notification.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -919,10 +763,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="1241">
           <caret line="116" column="82" selection-start-line="116" selection-start-column="71" selection-end-line="116" selection-end-column="82" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/categoryPost/home.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

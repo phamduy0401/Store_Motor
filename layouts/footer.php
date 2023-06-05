@@ -13,7 +13,7 @@
 
                                     <p><i class="fa fa-home" style="font-size: 16px;padding-right: 5px;"></i> Phường Đồng Nguyên - T.X Từ Sơn - Bắc Ninh </p>
                                     <p><i class="sp-ic fa fa-mobile" style="font-size: 22px;padding-right: 5px;"></i> 0336636255</p>
-                                    <p><i class="sp-ic fa fa-envelope" style="font-size: 13px;padding-right: 5px;"></i> tienit04021997@gmail.com</p>
+                                    <p><i class="sp-ic fa fa-envelope" style="font-size: 13px;padding-right: 5px;"></i> duy0401@gmail.com</p>
                                 </li>
                             </ul>
                         </div>

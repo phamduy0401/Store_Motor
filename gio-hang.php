@@ -116,6 +116,18 @@ if ( !isset($_SESSION['cart']) | count($_SESSION['cart']) == 0)
                                 <a href="<?php echo base_url() ?>" class="btn btn-danger">Tiếp tục mua hàng</a>
                                 <a style="float: right" href="thanh-toan.php" class="btn btn-success">Thanh toán</a>
                             </li>
+                            <form class="" method="POST" target="_blank" enctype="application/x-www-form-urlencoded"
+                          action="xulythanhtoanmomo.php">
+                          <input type="submit" name="momo" value="Thanh toán MOMO ATM" class="btn btn-danger">
+                    </form>
+                          <br></br>
+
+                          <form class="" method="POST" target="_blank" enctype="application/x-www-form-urlencoded"
+                          action="xulythanhtoanmomo_atm.php">
+                          <input type="submit" name="momo" value="Thanh toán qua ATM" class="btn btn-danger">
+                          
+                        </form>
+
                         </ul>
                     </div>
                 </div>
